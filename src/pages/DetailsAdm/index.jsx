@@ -42,6 +42,7 @@ export function DetailsAdm() {
         <div className="textDetails">
           <h1>{data.name}</h1>
           <p>{data.description}</p>
+          
           <div className="ingredients">
             {
               ingredients.map(ingredient => (
@@ -52,6 +53,7 @@ export function DetailsAdm() {
               ))
             }
           </div>
+          
           <div className="finishBuy">
             <span className="price">R$ {String(Number(data.price).toFixed(2)).replace(".", ",")}</span>
             <button className="button" onClick={() => handleDeleteDish(data.id)}>

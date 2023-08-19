@@ -25,14 +25,14 @@ export function AmountAndButtonInclude({ image, price, name }) {
       return
     }
     await api.post("/request", { name, price, image, amount }).then(() => { alert("Item included") })
-    //window.location.reload();
+  
   }
   return (
     <Container>
       <span className="amount"><a><RiSubtractFill onClick={handleAmountSub} /></a> {amount} <a><RiAddLine onClick={handleAmountSum} /></a></span>
       <Button onClick={handleNewRequest}>
         <CgNotes />
-        incluir
+        include
       </Button>
     </Container>
   )

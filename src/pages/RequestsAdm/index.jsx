@@ -8,15 +8,15 @@ import { BsTrashFill } from "react-icons/bs"
 
 export function RequestsAdm() {
   const [request, setRequest] = useState([])
-  //const [status, setStatus] = useState("")
-  //const [id, setId] = useState(33)
 
   useEffect(() => {
     async function fetchRequests() {
       const response = await api.get("/requestsadm")
       setRequest(response.data.allRequestsUsers)
     }
+    
     fetchRequests()
+
   }, [request])
 
   async function handleOption(value, id) {
@@ -45,6 +45,7 @@ export function RequestsAdm() {
 return (
   <Container>
     <HeaderTwo />
+    
     <main>
       <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
       <h1 >All orders</h1>
@@ -58,6 +59,7 @@ return (
             <th>Date</th>
           </tr>
         </thead>
+        
         <tbody>
           {
             request.map(request => (

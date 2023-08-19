@@ -19,6 +19,7 @@ export function HeaderTwo() {
         <BsFillHexagonFill />
         <span>food explorer</span>
       </div>
+      
       <div className="adm">
         <p>Administrator</p>
         <Logout onClick={handleSignOut}>

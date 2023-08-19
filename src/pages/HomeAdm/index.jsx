@@ -28,7 +28,9 @@ export function HomeAdm() {
       const response = await api.get("/allrequests")
       setRequest(response.data.allRequests)
     }
+    
     fetchRequests()
+
   }, [request])
 
   useEffect(() => {
@@ -36,7 +38,9 @@ export function HomeAdm() {
       const response = await api.get("/request")
       setRequests(response.data.requests)
     }
+    
     fetchRequests()
+
   }, [requests])
 
   useEffect(() => {
@@ -44,7 +48,9 @@ export function HomeAdm() {
       const response = await api.get(`/dishes/?name=${search}`)
       setFoods(response.data.dishes)
     }
+    
     fetchFoods()
+
   }, [search, foods])
 
   useEffect(() => {
@@ -52,7 +58,9 @@ export function HomeAdm() {
       const response = await api.get(`/drinks/?name=${search}`)
       setFoodsDrinks(response.data.drinks)
     }
+    
     fetchFoodsDrinks()
+
   }, [search, foodsDrinks])
 
   useEffect(() => {
@@ -60,7 +68,9 @@ export function HomeAdm() {
       const response = await api.get(`/desserts/?name=${search}`)
       setFoodsDesserts(response.data.desserts)
     }
+    
     fetchFoodsDesserts()
+
   }, [search, foodsDesserts])
 
   async function handleDeleteDish(id) {
@@ -95,7 +105,7 @@ export function HomeAdm() {
 
   const handleLeftClickTwo = (e) => {
     e.preventDefault()
-    console.log(carousel.current)
+    //console.log(carousel.current)
     carouselTwo.current.scrollLeft -= carouselTwo.current.offsetWidth
   }
 
@@ -106,7 +116,7 @@ export function HomeAdm() {
 
   const handleLeftClickThree = (e) => {
     e.preventDefault()
-    console.log(carousel.current)
+    //console.log(carousel.current)
     carouselThree.current.scrollLeft -= carouselThree.current.offsetWidth
   }
 
@@ -131,6 +141,7 @@ export function HomeAdm() {
           <BsFillHexagonFill />
           <span>food explorer</span>
         </div>
+        
         <div className="gap">
           <Input >
             <BiSearchAlt />
@@ -145,6 +156,7 @@ export function HomeAdm() {
       <main>
         <div className="logoHome">
           <img src={HomeImage} alt="home image" />
+          
           <div className="logoText">
             <div className="addFoods">
               <span>Add new:</span>
@@ -163,9 +175,11 @@ export function HomeAdm() {
           <div className="arrowOne" onClick={handleLeftClick}>
             <button ><IoIosArrowBack /></button>
           </div>
+          
           <div className="arrowTwo" onClick={handleRightClick}>
             <button ><IoIosArrowForward /></button>
           </div>
+          
           <div ref={carousel} className="listFood">
             <div className="listFoods">
               {
@@ -187,13 +201,16 @@ export function HomeAdm() {
           </div>
         </div>
         <h2 id="title">Desserts</h2>
+        
         <div className="container">
           <div className="arrowOne" onClick={handleLeftClickTwo}>
             <button ><IoIosArrowBack /></button>
           </div>
+          
           <div className="arrowTwo" onClick={handleRightClickTwo}>
             <button ><IoIosArrowForward /></button>
           </div>
+          
           <div ref={carouselTwo} className="listFood">
             <div className="listFoods">
               {
@@ -213,13 +230,16 @@ export function HomeAdm() {
           </div>
         </div>
         <h2 id="title">Beverages</h2>
+        
         <div className="container">
           <div className="arrowOne" onClick={handleLeftClickThree}>
             <button ><IoIosArrowBack /></button>
           </div>
+          
           <div className="arrowTwo" onClick={handleRightClickThree}>
             <button ><IoIosArrowForward /></button>
           </div>
+          
           <div ref={carouselThree} className="listFood">
             <div className="listFoods">
               {

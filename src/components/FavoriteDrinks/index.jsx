@@ -11,8 +11,6 @@ export function FavoriteDrinks({drink_id}) {
   useEffect(() => {
     async function Favorite() {
       const response = await api.get(`/favoritesdrinks/${drink_id}`)
-      //console.log(response.data)
-      //console.log(response.data.favoriteDish.length === 0)
       
       if (response.data.favoriteDrink.length === 0) {
         setFavorite(false)
@@ -20,7 +18,9 @@ export function FavoriteDrinks({drink_id}) {
         setFavorite(true)
       }
     }
+    
     Favorite()
+    
   }, [])
  
   async function handleFavorite() {

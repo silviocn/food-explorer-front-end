@@ -18,7 +18,9 @@ export function MyFavorites() {
       const response = await api.get("/favoritesdishes")
       setFavoritesDish(response.data.favoritesDishes)
     }
+    
     fetchFavoritesDish()
+
   }, [])
 
   useEffect(() => {
@@ -26,7 +28,9 @@ export function MyFavorites() {
       const response = await api.get("/favoritesdrinks")
       setFavoritesDrink(response.data.favoritesDrinks)
     }
+    
     fetchFavoritesDish()
+
   }, [])
 
   useEffect(() => {
@@ -34,7 +38,9 @@ export function MyFavorites() {
       const response = await api.get("/favoritesdesserts")
       setFavoritesDessert(response.data.favoritesDesserts)
     }
+    
     fetchFavoritesDish()
+
   }, [])
 
   return (
@@ -45,6 +51,7 @@ export function MyFavorites() {
           <div className="button">
             <ButtonText to="/"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back to Home</p></ButtonText>
           </div>
+          
           <div className="columns">
             <div className="columnOne">
               <h1 className={statePage ? "titleLight" : "titleDark"}>Favorite Dishes</h1>
@@ -64,6 +71,7 @@ export function MyFavorites() {
                 }
               </div>
             </div>
+            
             <div className="columnTwo">
               <h1 className={statePage ? "titleLight" : "titleDark"}>Favorite Desserts</h1>
               <div className="requests">
@@ -82,6 +90,7 @@ export function MyFavorites() {
                 }
               </div>
             </div>
+            
             <div className="columnTwo">
               <h1 className={statePage ? "titleLight" : "titleDark"}>Favorite Beverages</h1>
               <div className="requests">

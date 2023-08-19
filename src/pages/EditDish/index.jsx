@@ -21,14 +21,16 @@ export function EditDish() {
     setIngredients(prevState => [...prevState, newIngredient])
     setNewIngredient("")
   }
-  function handleRemoveIngredient(deleted) {
-    setIngredients(prevState => prevState.filter(ingredient => ingredient !== deleted))
-  }
 
   function handleImage(event) {
     const file = event.target.files[0]
     setFile(file)
   }
+  
+  function handleRemoveIngredient(deleted) {
+    setIngredients(prevState => prevState.filter(ingredient => ingredient !== deleted))
+  }
+
 
   async function handleNewDish() {
     if (!name) {

@@ -26,7 +26,9 @@ export function Header() {
       const response = await api.get("/request")
       setRequests(response.data.requests)
     }
+    
     fetchRequests()
+
   }, [requests])
 
   useEffect(() => {
@@ -34,7 +36,9 @@ export function Header() {
       const response = await api.get("/allrequests")
       setRequest(response.data.allRequests)
     }
+    
     fetchRequests()
+
   }, [request])
 
   const { signOut } = useAuth()
@@ -58,6 +62,7 @@ export function Header() {
             </Input>
           </div>
         </div>
+        
         <div className="buttons">
           <Link to="/myrequest">
             <ButtonTwo>
@@ -69,6 +74,7 @@ export function Header() {
               <CgNotes />All my orders ({request.length})
             </ButtonTwo>
           </Link>
+          
           <div className={search.length !== 0 ? "searchAlert" : "none"}>
             <RiAlertFill className="svgAlert" /><p>Please press enter or click on the magnifier</p>
           </div>

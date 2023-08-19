@@ -31,7 +31,9 @@ export function Home() {
       const response = await api.get("/allrequests")
       setRequest(response.data.allRequests)
     }
+    
     fetchRequests()
+
   }, [request])
 
   useEffect(() => {
@@ -39,7 +41,9 @@ export function Home() {
       const response = await api.get("/request")
       setRequests(response.data.requests)
     }
+
     fetchRequests()
+
   }, [requests])
 
   useEffect(() => {
@@ -47,7 +51,9 @@ export function Home() {
       const response = await api.get(`/dishes/?name=${search}`)
       setFoods(response.data.dishes)
     }
+
     fetchFoods()
+
   }, [search])
 
   useEffect(() => {
@@ -55,7 +61,9 @@ export function Home() {
       const response = await api.get(`/drinks/?name=${search}`)
       setFoodsDrinks(response.data.drinks)
     }
+    
     fetchFoodsDrinks()
+
   }, [search])
 
   useEffect(() => {
@@ -63,7 +71,9 @@ export function Home() {
       const response = await api.get(`/desserts/?name=${search}`)
       setFoodsDesserts(response.data.desserts)
     }
+    
     fetchFoodsDesserts()
+
   }, [search])
 
   const carousel = useRef(null)
@@ -107,10 +117,12 @@ export function Home() {
     <ContainerOne>
       <ContainerTwo className={statePage ? "containerLight" : "containerDark"}>
         <Header />
+        
         <Main className={statePage ? "light" : "dark"}>
           <div className={search.length !== 0 ? "searchAlert" : "none"}>
             <RiAlertFill className="svgAlert" /><p>Please press enter or click on the magnifier</p>
           </div>
+          
           <div className={statePage ? "logoHomeLight" : "logoHomeDark"}>
             <img src={HomeImage} alt="Home Image" />
             <div className={statePage ? "logoTextLight" : "logoTextDark"}>
@@ -119,18 +131,22 @@ export function Home() {
             </div>
           </div>
           <h2 className={statePage ? "textLight" : "textDark"}>Main Dishes</h2>
+          
           <div className="container">
             <div className={statePage ? "arrowOneLight" : "arrowOneDark"} onClick={handleLeftClick}>
               <button ><IoIosArrowBack /></button>
             </div>
+            
             <div className={statePage ? "arrowTwoLight" : "arrowTwoDark"} onClick={handleRightClick}>
               <button ><IoIosArrowForward /></button>
             </div>
+            
             <div ref={carousel} className="listFood">
               <div className={foods.length === 0 ? "searchNone" : "none"}>
                 <p>Any dish was found</p>
                 <RiAlertFill />
               </div>
+              
               <div className={foods.length === 0 ? "none" : "listFoods"}>
                 {
                   foods.map(food => (
@@ -149,19 +165,24 @@ export function Home() {
               </div>
             </div>
           </div>
+          
           <h2 className={statePage ? "textLight" : "textDark"}>Desserts</h2>
+          
           <div className="container">
             <div className={statePage ? "arrowOneLight" : "arrowOneDark"} onClick={handleLeftClickTwo}>
               <button ><IoIosArrowBack /></button>
             </div>
+            
             <div className={statePage ? "arrowTwoLight" : "arrowTwoDark"} onClick={handleRightClickTwo}>
               <button ><IoIosArrowForward /></button>
             </div>
+            
             <div ref={carouselTwo} className="listFood">
               <div className={foodsDesserts.length === 0 ? "searchNone" : "none"}>
                 <p>Any dessert was found</p>
                 <RiAlertFill />
               </div>
+              
               <div className={foodsDesserts.length === 0 ? "none" : "listFoods"}>
                 {
                   foodsDesserts.map(food => (
@@ -180,19 +201,23 @@ export function Home() {
               </div>
             </div>
           </div>
+          
           <h2 className={statePage ? "textLight" : "textDark"}>Beverage</h2>
           <div className="container">
             <div className={statePage ? "arrowOneLight" : "arrowOneDark"} onClick={handleLeftClickThree}>
               <button ><IoIosArrowBack /></button>
             </div>
+            
             <div className={statePage ? "arrowTwoLight" : "arrowTwoDark"} onClick={handleRightClickThree}>
               <button ><IoIosArrowForward /></button>
             </div>
+            
             <div ref={carouselThree} className="listFood">
               <div className={foodsDrinks.length === 0 ? "searchNone" : "none"}>
                 <p>Any drink was found</p>
                 <RiAlertFill />
               </div>
+              
               <div className={foodsDrinks.length === 0 ? "none" : "listFoods"}>
                 {
                   foodsDrinks.map(food => (

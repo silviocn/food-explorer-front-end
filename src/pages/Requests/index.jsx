@@ -16,7 +16,9 @@ export function Requests() {
       const response = await api.get("/allrequests")
       setRequest(response.data.allRequests)
     }
+   
     fetchRequests()
+
   }, [request])
 
   async function handleDelete(id) {
@@ -39,6 +41,7 @@ export function Requests() {
                 <th className={statePage ? "thLight" : "thDark"}>Date</th>
               </tr>
             </thead>
+            
             <tbody>
               {
                 request.map(request => (

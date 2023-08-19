@@ -36,6 +36,7 @@ export function SignUp() {
           <BsFillHexagonFill className={statePage ? "svgLight" : "svgDark"}/>
           <h3 className={statePage ? "h3Light" : "h3Dark"}>food explorer</h3>
         </header>
+        
         <div className={statePage ? "divLight" : "divDark"}>
           <h1 className={statePage ? "h1Light" : "h1Dark"}>Create your account</h1>
           <div className="input">

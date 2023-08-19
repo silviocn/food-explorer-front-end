@@ -3,7 +3,6 @@ import { api } from "../services/api"
 export const AuthContext = createContext({})
 
 function AuthProvider({ children }) {
-  //console.log(children)
   const [data, setData] = useState({})
   async function signIn({ email, password }) {
     try {

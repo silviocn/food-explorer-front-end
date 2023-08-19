@@ -11,15 +11,15 @@ export function FavoriteDesserts({ dessert_id }) {
   useEffect(() => {
     async function Favorite() {
       const response = await api.get(`/favoritesdesserts/${dessert_id}`)
-      //console.log(response.data)
-      //console.log(response.data.favoriteDish.length === 0)
       if (response.data.favoriteDessert.length === 0) {
         setFavorite(false)
       } else {
         setFavorite(true)
       }
     }
+    
     Favorite()
+    
   }, [])
 
   async function handleFavorite() {

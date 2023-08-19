@@ -28,7 +28,9 @@ export function MyRequest() {
       const response = await api.get("/request")
       setRequest(response.data.requests)
     }
+    
     fetchRequests()
+
   }, [request])
 
   async function handleDelete(id) {
@@ -65,12 +67,14 @@ export function MyRequest() {
       <ContainerTwo className={statePage ? "containerLight" : "containerDark"}>
         <Header />
         <main className={statePage ? "light" : "dark"}>
+          
           <div className="columnOne">
             <ButtonText to="/" ><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back to Home</p></ButtonText>
             <h1 className={statePage ? "h1Light" : "h1Dark"}>My order</h1>
             <div className="requests">
               {
                 request.map(request => (
+                  
                   <div className="request" key={String(request.id)}>
                     <img src={`${api.defaults.baseURL}/files/${request.image}`} alt="dish image" />
                     <div className="Text">
@@ -85,6 +89,7 @@ export function MyRequest() {
             </div>
             <h2 className={statePage ? "resultLight" : "resultDark"}>R$ {String(Number(sum).toFixed(2)).replace(".", ",")} </h2>
           </div>
+          
           <div className="columnTwo">
             <h1 className={statePage ? "h1Light" : "h1Dark"}>Payment</h1>
             <div className="headerTable">
@@ -93,23 +98,27 @@ export function MyRequest() {
                   <img src={Pix} alt="pix" /><p className={statePage ? "light" : "dark"}>PIX</p>
                 </div>
               </div>
+              
               <div className={backgroundTwo ? "credit" : "creditTwo"} onClick={() => setBackgroundTwo(!backgroundTwo)}>
                 <div className={statePage ? "creditLight" : "creditDark"}>
                   <HiOutlineCreditCard /><p className={statePage ? "light" : "dark"}>Credit</p>
                 </div>
               </div>
             </div>
+            
             <div className={statePage ? "rowLight" : "rowDark"}>
               <div className="image">
                 <div className={button ? "img" : "imgnone"}>
                   <img className={!background && backgroundTwo ? "img" : "imgnone"} src={QrCode} alt="qrcode" />
                 </div>
               </div>
+              
               <div className={!backgroundTwo && background ? "form" : "formnone"}  >
                 <div className={button ? "form" : "formnone"}>
                   <label className="input" htmlFor="num"><p className={statePage ? "light" : "dark"}>Card number</p>
                     <input type="text" placeholder="0000 0000 0000 0000" id="num" />
                   </label>
+                  
                   <div className="valAndCvc">
                     <label className="input" htmlFor="val"><p className={statePage ? "light" : "dark"}>Go thru</p>
                       <input type="text" placeholder="04/25" id="val" />
@@ -118,23 +127,27 @@ export function MyRequest() {
                       <input type="text" placeholder="04/25" id="cvc" />
                     </label>
                   </div>
+                  
                   <div className="button" onClick={() => setButton(!button)}>
                     <Button onClick={handlePay} ><img src={Pag} alt="pag" />Finish payment</Button>
                   </div>
                 </div>
               </div>
+              
               <div className={background && backgroundTwo ? "payOne" : "payTwo"}>
                 <div className={button ? "payOne" : "payTwo"}>
                   <FiClock className={statePage ? "svgLight" : "svgDark"} />
                   <p className={statePage ? "light" : "dark"}>Waiting for payment</p>
                 </div>
               </div>
+              
               <div className={!background && !backgroundTwo ? "alertOne" : "alertTwo"}>
                 <div className={button ? "alertOne" : "alertTwo"}>
                   <FiAlertTriangle className={statePage ? "svgLight" : "svgDark"} />
                   <p className={statePage ? "light" : "dark"}>Choose just one option</p>
                 </div>
               </div>
+              
               <div className={!button ? "buttonOne" : "buttonTwo"}>
                 <BsCheckCircle className={statePage ? "svgLight" : "svgDark"} />
                 <p className={statePage ? "light" : "dark"}>Payment approved!</p>

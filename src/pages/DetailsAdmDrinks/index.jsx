@@ -21,7 +21,9 @@ export function DetailsAdmDrinks() {
       setData(response.data)
       setIngredients(response.data.ingredients)
     }
+    
     fetchFood()
+    
   }, [])
 
   async function handleDeleteDrink(id) {
@@ -39,6 +41,7 @@ export function DetailsAdmDrinks() {
         <div >
           <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="dish or drink image" />
         </div>
+        
         <div className="textDetails">
           <h1>{data.name}</h1>
           <p>{data.description}</p>
@@ -52,6 +55,7 @@ export function DetailsAdmDrinks() {
               ))
             }
           </div>
+          
           <div className="finishBuy">
             <span className="price">R$ {String(Number(data.price).toFixed(2)).replace(".", ",")}</span>
             <button className="button" onClick={() => handleDeleteDrink(data.id)}>

@@ -173,7 +173,7 @@ export function Img({ imgName }) {
   }else {
     return (
       <Container>
-        <img className="img" src={ingredients} alt="imagem da salada" />
+        <img className="img" src={ingredients} alt="salad image" />
       </Container>
     )
   }

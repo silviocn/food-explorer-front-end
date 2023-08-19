@@ -21,16 +21,20 @@ export function DetailsDrinks() {
       setData(response.data)
       setIngredients(response.data.ingredients)
     }
+    
     fetchFood()
+
   }, [])
 
   return (
     <Container>
       <Header />
+      
       <Main className={statePage ? "light" : "dark"}>
         <div className="back">
           <ButtonText to="/"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>
         </div>
+
         <div className="details">
           <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="drink or dish image" />
           <div className="textDetails">
@@ -46,6 +50,7 @@ export function DetailsDrinks() {
                 ))
               }
             </div>
+            
             <div className="finishBuy">
               <span className={statePage ? "priceLight" : "priceDark"}>R$ {String(Number(data.price).toFixed(2)).replace(".", ",")}</span>
               <AmountAndButtonInclude image={data.image} price={data.price} name={data.name} />

@@ -29,7 +29,7 @@ export function EditDesserts() {
     const file = event.target.files[0]
     setFile(file)
   }
-  //`${api.defaults.baseURL}/files/${dishes.image}`
+
 
   async function handleNewDish() {
     if (!name) {
@@ -56,26 +56,32 @@ export function EditDesserts() {
     formData.append("price", price)
     formData.append("ingredients", ingredients)
     formData.append("image", file)
-    await api.post("/desserts", formData).then(() => { alert("Item successfully registered"); navigate("/adm") }).catch(error => { if (error.response) { alert(error.response.data.message) } else { alert("Unable to register") } })
+    await api.post("/desserts", formData).then(() => { alert("Item successfully registered"); navigate("/adm") })
+    .catch(error => { if (error.response) { alert(error.response.data.message) 
+    } else { alert("Unable to register") } })
 
   }
   return (
     <Container>
       <HeaderTwo />
+      
       <main>
         <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
         <h1>Edit dessert</h1>
+        
         <div className="imageAndNameDish">
           <div className="imagedish">
             <p>Dessert image</p>
             <label htmlFor="imagedish"><FiUpload />Upload image</label>
             <input type="file" id="imagedish" onChange={(event) => handleImage(event)} />
           </div>
+          
           <div className="namedish">
             <label htmlFor="namedish">Name</label>
             <input type="text" id="namedish" placeholder="Example name" onChange={e => setName(e.target.value)} />
           </div>
         </div>
+        
         <div className="ingredientsAndPriceDish">
           <div className="ingredients">
             <p>Ingredients</p>
@@ -88,15 +94,18 @@ export function EditDesserts() {
               <IngredientItem placeholder="Add" isNew value={newIngredient} onChange={e => setNewIngredient(e.target.value)} onClick={handleAddIngredient} />
             </div>
           </div>
+          
           <div className="price">
             <label htmlFor="price">Price</label>
             <input type="number" id="price" placeholder="00,00" onChange={e => setPrice(e.target.value)} />
           </div>
         </div>
+        
         <div className="textarea">
           <p>Description</p>
           <textarea placeholder="Briefly talk about the dessert, ingredients and mixture." onChange={e => setDescription(e.target.value)} />
         </div>
+        
         <div className="button">
           <button className="addrequest" onClick={(e) => handleNewDish(e)}>
             Add order

@@ -15,14 +15,16 @@ export function Details() {
   const params = useParams()
   const { statePage } = useStatePage()
 
-  console.log(ingredients)
+  //console.log(ingredients)
   useEffect(() => {
     async function fetchFood() {
       const response = await api.get(`/dishes/${params.id}`)
       setData(response.data)
       setIngredients(response.data.ingredients)
     }
+    
     fetchFood()
+
   }, [])
 
   return (
@@ -34,10 +36,12 @@ export function Details() {
             <ButtonText to="/"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>
           </div>
           <div className="details">
-            <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="foto do prato" />
+            <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="dish image" />
+            
             <div className="textDetails">
               <h1 className={statePage ? "h1Light" : "h1Dark"}>{data.name}</h1>
               <p className={statePage ? "pLight" : "pDark"}>{data.description}</p>
+             
               <div className="ingredients">
                 {
                   ingredients.map(ingredient => (
@@ -48,6 +52,7 @@ export function Details() {
                   ))
                 }
               </div>
+
               <div className="finishBuy">
                 <span className={statePage ? "priceLight" : "priceDark"}>R$ {String(Number(data.price).toFixed(2)).replace(".", ",")}</span>
                 <AmountAndButtonInclude image={data.image} price={data.price} name={data.name} />

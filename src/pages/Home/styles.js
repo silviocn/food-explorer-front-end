@@ -21,7 +21,7 @@ export const ContainerTwo = styled.div`
   height: 100vh;
   display: grid;
   grid-template-rows: 104px auto 77px;
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     grid-template-rows: 150px auto 77px;
   }
   grid-template-areas: "header" "content" "footer";

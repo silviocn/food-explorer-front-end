@@ -41,7 +41,7 @@ export const Container = styled.div`
     line-height: 50px;
     color: ${({ theme }) => theme.COLORS.WHITE_200};
   }
-  
+
   .h3Light{
     font-family: 'Roboto';
     font-weight: 700;
@@ -106,7 +106,7 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
       color: ${({ theme }) => theme.COLORS.WHITE_200};
-      margin-top: 20px;
+      margin-top: 32px;
     }
     .linkLight{
       font-family: 'Poppins';
@@ -117,7 +117,7 @@ export const Container = styled.div`
       align-items: center;
       justify-content: center;
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-      margin-top: 20px;
+      margin-top: 32px;
     }
     .input{
       display: flex;

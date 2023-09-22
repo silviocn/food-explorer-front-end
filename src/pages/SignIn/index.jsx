@@ -34,7 +34,7 @@ export function SignIn() {
           <input className={statePage ? "inputLight" : "inputDark"} type="text" id="email" placeholder="Example: example@email.com" onChange={e => setEmail(e.target.value)} />
         </div>
         <div className="input">
-          <label className={statePage ? "labelLight" : "labelDark"} htmlFor="password">Passoword</label>
+          <label className={statePage ? "labelLight" : "labelDark"} htmlFor="password">Password</label>
           <input className={statePage ? "inputLight" : "inputDark"} type="password" id="password" placeholder="At least 6 characters " onChange={e => setPassword(e.target.value)} />
         </div>
         <Button onClick={handleSignIn}>Log In</Button>

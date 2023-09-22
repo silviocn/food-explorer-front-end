@@ -466,7 +466,7 @@ export const Main = styled.main`
         color: ${({ theme }) => theme.COLORS.WHITE_200};
         width: 18px;
         height: 18px;
-    }
+      }
     .priceDark {
       font-family: 'Roboto';
       font-weight: 400;
@@ -478,7 +478,7 @@ export const Main = styled.main`
       justify-content: center;
       margin-top: 16px;
       margin-bottom: 16px;
-    }
+      }
     .priceLight {
       font-family: 'Roboto';
       font-weight: bold;
@@ -490,13 +490,13 @@ export const Main = styled.main`
       justify-content: center;
       margin-top: 16px;
       margin-bottom: 16px;
-    }
+      }
     .amountAndButton {
       display: flex;
       align-items: center;
       gap: 20px;
       padding: 0 46px;
-    }
+     }
     .amount{
       display: flex;
       align-items: center;
@@ -506,6 +506,7 @@ export const Main = styled.main`
       font-size: 20px;
       line-height: 160%;
       color: ${({ theme }) => theme.COLORS.WHITE_100};
+      }
     }
   }
   .none {

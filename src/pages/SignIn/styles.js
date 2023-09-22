@@ -33,6 +33,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     gap: 19px;
+
     .h3Dark{
     font-family: 'Roboto';
     font-weight: 700;
@@ -40,6 +41,7 @@ export const Container = styled.div`
     line-height: 50px;
     color: ${({ theme }) => theme.COLORS.WHITE_200};
   }
+  
   .h3Light{
     font-family: 'Roboto';
     font-weight: 700;

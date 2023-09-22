@@ -7,4 +7,6 @@ Is needed to create an account to use the app. It's also possible to create and 
 
 This app was built with JavaScript, using mainly nodejs and reactjs, with the following structure: components, migrations, states, hooks, icons, styled components. For the development of the app beekeeper and insomnia where used.
 
-To use this project, please don't forget to take a look at the document package.json, env.example amd api.js in services folder (front-end). Also, build your own app using insomnia to create administrator user account or upload other images.
+To use this project, please don't forget to take a look at the document package.json, env.example and api.js in services folder (front-end). Also, build your own app using insomnia to create administrator user account or upload other images.
+
+Deploy link: https://food-explorer-by-silviocn.netlify.app/

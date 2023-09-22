@@ -28,7 +28,7 @@ export function SignIn() {
       </header>
       
       <div className={statePage ? "divLight" : "divDark"} >
-        <h1 className={statePage ? "h1Light" : "h1Dark"}>Please Log In</h1>
+        <h1 className={statePage ? "h1Light" : "h1Dark"}>Please Sign In</h1>
         <div className="input" >
           <label className={statePage ? "labelLight" : "labelDark"} htmlFor="email">Email</label>
           <input className={statePage ? "inputLight" : "inputDark"} type="text" id="email" placeholder="Example: example@email.com" onChange={e => setEmail(e.target.value)} />

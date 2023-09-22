@@ -68,7 +68,7 @@ export const Container = styled.header`
   }
   .gap {
     display: flex;
-    width: 100%;
+    width: 80%;
     align-items: center;
     gap: 32px;
   }

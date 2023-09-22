@@ -70,7 +70,7 @@ export const Container = styled.header`
     display: flex;
     width: 100%;
     align-items: center;
-    gap: 20px;
+    gap: 32px;
   }
   .logo {
     display: flex;

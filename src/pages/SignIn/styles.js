@@ -15,7 +15,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   @media (max-width: 600px) {
-    min-width: 600px;
+    min-width: 450px;
   }
 }
   
@@ -28,11 +28,11 @@ export const Container = styled.div`
   }
   .statePage:hover {
     scale: 2.8;
-  }
     margin-left: 150px;
     display: flex;
     align-items: center;
     gap: 19px;
+  }
 
     .h3Dark{
     font-family: 'Roboto';
@@ -123,7 +123,7 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       gap: 8px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
       .labelDark {
         font-family: 'Roboto';
         font-style: normal;

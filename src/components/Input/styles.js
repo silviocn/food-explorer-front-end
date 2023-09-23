@@ -37,6 +37,7 @@ export const Container = styled.div`
 
   .i {
     color: ${({ theme }) => theme.COLORS.WHITE_200};
+    margin-left: 50px;
   }
   
   input:focus {

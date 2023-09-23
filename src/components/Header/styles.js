@@ -68,9 +68,10 @@ export const Container = styled.header`
   }
   .gap {
     display: flex;
-    width: 80%;
+    width: 100%;
     align-items: center;
     gap: 32px;
+    padding: 32px;
   }
   .logo {
     display: flex;
@@ -119,6 +120,8 @@ export const Container = styled.header`
   .buttons {
     display: flex;
     gap: 10px;
+    width: 216px;
+    height: 56px;
   }
   @keyframes topdown {
       0% {

@@ -72,6 +72,7 @@ export function Input({ children, placeholder, value }) {
   return (
     <Container>
       <input className={statePage ? "light" : "dark"} ref={input} type="search" value={value} placeholder={placeholder} onKeyDown={(e) => SearchInput(e)} onChange={(e) => searchInput(e)} />
+      <i class="search_icon"></i>
       
       <div className={option.length === 0 ? "none" : "searchResults"}>
         <a onClick={closeSearch} className="close" title="Close"><CgCloseR /></a>

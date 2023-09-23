@@ -34,6 +34,10 @@ export const Container = styled.div`
     border-radius: 5px;
     text-align: center;
   }
+
+  .i {
+    color: ${({ theme }) => theme.COLORS.WHITE_200};
+  }
   
   input:focus {
     background: ${({ theme }) => theme.COLORS.BACKGROUND_600};

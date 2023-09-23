@@ -20,6 +20,7 @@ export const Container = styled.div`
     height: 100%;
     transition: all 1s;
     width: 100%;
+    text-align: center;
   }
 
   input.light{
@@ -31,6 +32,7 @@ export const Container = styled.div`
     transition: all 1s;
     width: 100%;
     border-radius: 5px;
+    text-align: center;
   }
   
   input:focus {

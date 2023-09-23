@@ -72,6 +72,7 @@ export const Container = styled.header`
     align-items: center;
     gap: 32px;
     padding: 32px;
+    text-align: center;
   }
   .logo {
     display: flex;
@@ -151,7 +152,7 @@ export const Container = styled.header`
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 120px;
+    height: 90px;
     white-space: normal;
     padding: 10px;
     text-align: center;

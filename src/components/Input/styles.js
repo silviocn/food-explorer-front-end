@@ -60,7 +60,7 @@ export const Container = styled.div`
     z-index: 4;
     top: 76px;
     background: ${({ theme }) => theme.COLORS.BACKGROUND_400};
-    border-radius: 5px 5px 10px 10px;
+    border-radius: 5px;
     padding: 10px 10px 10px 10px;
     width: 276px;
     height: 200px;

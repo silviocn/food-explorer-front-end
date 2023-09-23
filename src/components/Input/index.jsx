@@ -4,6 +4,7 @@ import { useState, useRef } from "react"
 import { useInput } from '../../hooks/input'
 import { api } from "../../services/api"
 import { FaClock } from "react-icons/fa"
+import { BiSearchAlt } from "react-icons/bi"
 import { CgClose } from 'react-icons/cg'
 import { CgCloseR } from 'react-icons/cg'
 import { useStatePage } from '../../hooks/statePage'
@@ -72,7 +73,7 @@ export function Input({ children, placeholder, value }) {
   return (
     <Container>
       <input className={statePage ? "light" : "dark"} ref={input} type="search" value={value} placeholder={placeholder} onKeyDown={(e) => SearchInput(e)} onChange={(e) => searchInput(e)} />
-      <i class="search_icon"></i>
+      <i class="search_icon"><BiSearchAlt /></i>
       
       <div className={option.length === 0 ? "none" : "searchResults"}>
         <a onClick={closeSearch} className="close" title="Close"><CgCloseR /></a>

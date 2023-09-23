@@ -68,10 +68,7 @@ export function Header() {
               <CgNotes />All my orders ({request.length})
             </ButtonTwo>
           </Link>
-          
-          <div className={search.length !== 0 ? "searchAlert" : "none"}>
-            <RiAlertFill className="svgAlert" /><p>Please press enter or click on the magnifier</p>
-          </div>
+                  
           <Logout onClick={handleSignOut}>
             <FiLogOut className={statePage ? "LogoutDark" : "LogoutLight"} />
           </Logout>

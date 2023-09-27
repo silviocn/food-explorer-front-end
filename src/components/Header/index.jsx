@@ -56,7 +56,7 @@ export function Header() {
           <BsFillHexagonFill className={statePage ? "hexagonLight" : "hexagonDark"} />
           <span className={statePage ? "spanLight" : "spanDark"}>food explorer</span>
           <div className="gap">
-            <Input placeholder="Search for your items" value={search}>
+            <Input placeholder="Search for dishes or ingredients" value={search}>
               <BiSearchAlt />
             </Input>
           </div>

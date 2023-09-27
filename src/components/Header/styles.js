@@ -68,15 +68,11 @@ export const Container = styled.header`
   }
   .gap {
     display: flex;
-    width: 100%;
+    width: 80%;
     align-items: center;
     gap: 32px;
     padding: 32px;
     text-align: center;
-    > .icon {
-      align-items: start;
-      margin-right: 25px;
-    }
   }
   .logo {
     display: flex;

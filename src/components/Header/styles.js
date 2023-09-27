@@ -73,7 +73,6 @@ export const Container = styled.header`
     width: 100%;
     align-items: center;
     gap: 32px;
-    margin-right: 50px;
     padding: 12px 14px;
   }
 

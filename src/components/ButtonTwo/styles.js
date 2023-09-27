@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.button`
-    background: none;
-    border: none;
-  .buttonDark {
+background: none;
+border: none;
+
+.buttonDark {
   background-color: ${({theme}) => theme.COLORS.RED_100};
   color: ${({theme}) => theme.COLORS.WHITE_200};
+  
+  width: 216px;
   height: 56px;
   border: 0;
   font-size: 14px;
@@ -16,7 +19,7 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 8px;
   svg {
     width: 26px;
     height: 22px;
@@ -28,6 +31,8 @@ export const Container = styled.button`
 .buttonLight {
   background-color: ${({theme}) => theme.COLORS.BACKGROUND_800};
   color: ${({theme}) => theme.COLORS.WHITE_200};
+  
+  width: 216px;
   height: 56px;
   border: 0;
   font-size: 14px;

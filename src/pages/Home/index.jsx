@@ -127,7 +127,7 @@ export function Home() {
             <img src={HomeImage} alt="Home Image" />
             <div className={statePage ? "logoTextLight" : "logoTextDark"}>
               <h1 >Unparalleled flavors</ h1>
-              <p>Taste the flavour of selected ingredients</p>
+              <p>Feel the care of our dishes preparation with selected ingredients</p>
             </div>
           </div>
           <h2 className={statePage ? "textLight" : "textDark"}>Main Dishes</h2>

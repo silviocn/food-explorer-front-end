@@ -73,8 +73,9 @@ export function Input({ icon: Icon, children, placeholder, value }) {
   return (
     <Container>
       {Icon && <Icon size={20} />}
-      <input Icon className={statePage ? "light" : "dark"} ref={input} type="search" value={value} placeholder={placeholder} onKeyDown={(e) => SearchInput(e)} onChange={(e) => searchInput(e)} />
-      <i class="search_icon"><BiSearchAlt /></i>
+      <input Icon className={statePage ? "light" : "dark"} 
+        ref={input} type="search" value={value} placeholder={placeholder} 
+        onKeyDown={(e) => SearchInput(e)} onChange={(e) => searchInput(e)} />
       
       <div className={option.length === 0 ? "none" : "searchResults"}>
         <a onClick={closeSearch} className="close" title="Close"><CgCloseR /></a>

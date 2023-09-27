@@ -73,11 +73,8 @@ export const Container = styled.header`
     gap: 32px;
     padding: 32px;
     text-align: center;
-    > .icon {
-      align-items: start;
-      margin-right: 25px;
-    }
   }
+  
   .logo {
     display: flex;
     align-items: center;

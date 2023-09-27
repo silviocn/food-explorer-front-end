@@ -35,12 +35,6 @@ export const Container = styled.div`
     text-align: center;
   }
 
-  .i {
-    color: ${({ theme }) => theme.COLORS.WHITE_200};
-    margin-left: 50px;
-    align-self: left;
-  }
-  
   input:focus {
     background: ${({ theme }) => theme.COLORS.BACKGROUND_600};
     
@@ -51,7 +45,7 @@ export const Container = styled.div`
     height: 19.5px;
     margin-left: 25px;
   }
-  
+
   button {
     border: none;
     background: none;

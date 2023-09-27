@@ -21,7 +21,7 @@ export const Container = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 100px;
   width: 100%;
   svg {
     width: 26px;

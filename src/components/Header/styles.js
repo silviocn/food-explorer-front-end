@@ -73,6 +73,9 @@ export const Container = styled.header`
     gap: 32px;
     padding: 32px;
     text-align: center;
+    img {
+      align-items: start;
+    }
   }
   .logo {
     display: flex;

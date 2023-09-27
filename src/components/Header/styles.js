@@ -71,10 +71,13 @@ export const Container = styled.header`
     width: 100%;
     align-items: center;
     gap: 32px;
-    padding: 32px;
-    text-align: center;
+    //padding: 32px;
+    //text-align: center;
+    text-align: right;
+    margin-right: 90px;
+    padding: 12px 14px; // novo
   }
-  
+
   .logo {
     display: flex;
     align-items: center;

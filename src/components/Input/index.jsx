@@ -4,7 +4,6 @@ import { useState, useRef } from "react"
 import { useInput } from '../../hooks/input'
 import { api } from "../../services/api"
 import { FaClock } from "react-icons/fa"
-import { BiSearchAlt } from "react-icons/bi"
 import { CgClose } from 'react-icons/cg'
 import { CgCloseR } from 'react-icons/cg'
 import { useStatePage } from '../../hooks/statePage'

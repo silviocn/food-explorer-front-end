@@ -5,7 +5,7 @@ import { FiLogOut } from 'react-icons/fi'
 import { Container, Logout } from './styles'
 import { ButtonTwo } from '../ButtonTwo'
 import { Input } from '../Input'
-import { BiSearchAlt } from 'react-icons/bi'
+import { BiSearchAlt2 } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../../hooks/auth'
 import { api } from "../../services/api"
@@ -56,7 +56,7 @@ export function Header() {
           <BsFillHexagonFill className={statePage ? "hexagonLight" : "hexagonDark"} />
           <span className={statePage ? "spanLight" : "spanDark"}>food explorer</span>
           <div className="gap">
-            <Input icon={BiSearchAlt} placeholder="Search for dishes or ingredients" value={search}>
+            <Input icon={BiSearchAlt2} placeholder="Search for dishes or ingredients" value={search}>
             </Input>
           </div>
         </div>

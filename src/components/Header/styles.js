@@ -63,9 +63,11 @@ export const Container = styled.header`
   animation: topdown 1s;
   background-color: ${({ theme }) => theme.COLORS.WHITE_200};
  }
+ 
   a{
     color: ${({theme}) => theme.COLORS.WHITE_200};
   }
+
   .gap {
     display: flex;
     width: 100%;
@@ -122,12 +124,14 @@ export const Container = styled.header`
       }
     }
   }
+  
   .buttons {
     display: flex;
     gap: 10px;
     width: 216px;
     height: 56px;
   }
+
   @keyframes topdown {
       0% {
         opacity: 0;
@@ -138,6 +142,7 @@ export const Container = styled.header`
         transform: translateY(0)
       }
     }
+
   .none {
     display: none;
   }
@@ -166,10 +171,12 @@ export const Container = styled.header`
         display: none;
       }
   }
+
   .svgAlert {
     width: 50px;
     height: 50px;
   }
+
   @keyframes leftAlert {
     0% {
         opacity: 0;
@@ -181,6 +188,7 @@ export const Container = styled.header`
         height: 120px;
       }
     }
+
     .statePage {
     position: absolute;
     top: 20px;
@@ -189,6 +197,7 @@ export const Container = styled.header`
     scale: 1.5;
     transition: all 0.5s;
   }
+
   .statePage:hover {
     scale: 2.0;
     filter: brightness(0.8);

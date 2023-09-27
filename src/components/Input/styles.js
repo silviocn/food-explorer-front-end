@@ -19,7 +19,7 @@ export const Container = styled.div`
     padding: 10px;
     height: 100%;
     transition: all 1s;
-    width: 100%;
+    width: 50%;
     text-align: center;
   }
 
@@ -30,7 +30,7 @@ export const Container = styled.div`
     padding: 10px;
     height: 100%;
     transition: all 1s;
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
     text-align: center;
   }

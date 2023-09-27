@@ -9,7 +9,7 @@ import { CgClose } from 'react-icons/cg'
 import { CgCloseR } from 'react-icons/cg'
 import { useStatePage } from '../../hooks/statePage'
 
-export function Input({ children, placeholder, value }) {
+export function Input({ icon: Icon, children, placeholder, value }) {
   const [option, setOption] = useState([])
   const navigate = useNavigate()
   const input = useRef(null)
@@ -72,8 +72,9 @@ export function Input({ children, placeholder, value }) {
 
   return (
     <Container>
-      <input className={statePage ? "light" : "dark"} ref={input} type="search" value={value} placeholder={placeholder} onKeyDown={(e) => SearchInput(e)} onChange={(e) => searchInput(e)} />
-      <i class="search_icon"><BiSearchAlt /></i>
+      {Icon && <Icon size={20} />}
+      <input Icon className={statePage ? "light" : "dark"} ref={input} type="search" value={value} placeholder={placeholder} onKeyDown={(e) => SearchInput(e)} onChange={(e) => searchInput(e)} />
+      
       
       <div className={option.length === 0 ? "none" : "searchResults"}>
         <a onClick={closeSearch} className="close" title="Close"><CgCloseR /></a>

@@ -158,6 +158,7 @@ export const Main = styled.main`
       width: 200px;
       height: 150px;
       margin-top: 0px;
+      overflow-y: auto;
   }
       margin-top: -50px;
       margin-left: -40px;

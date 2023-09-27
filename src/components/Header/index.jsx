@@ -57,7 +57,7 @@ export function Header() {
           <span className={statePage ? "spanLight" : "spanDark"}>food explorer</span>
           <div className="gap">
             <Input placeholder="Search for dishes or ingredients" value={search}>
-              <BiSearchAlt />
+              <img src='../../assets/search_icon.png' alt='image of a magnifying glass' />
             </Input>
           </div>
         </div>

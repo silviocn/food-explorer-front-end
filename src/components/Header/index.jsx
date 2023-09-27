@@ -64,7 +64,7 @@ export function Header() {
         <div className="buttons">
           <Link to="/requests">
             <ButtonTwo>
-              <CgNotes />All my orders ({request.length})
+              <CgNotes />Orders ({request.length})
             </ButtonTwo>
           </Link>
                   

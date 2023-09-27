@@ -156,7 +156,7 @@ export const Main = styled.main`
     img {
       @media (max-width: 600px) {
       width: 200px;
-      height: 150px;
+      height: 180px;
       margin-top: 0px;
   }
       margin-top: -50px;
@@ -179,7 +179,7 @@ export const Main = styled.main`
     img {
       @media (max-width: 600px) {
       width: 200px;
-      height: 150px;
+      height: 180px;
       margin-top: 0px;
   }
       margin-top: -50px;

@@ -64,7 +64,7 @@ export function Header() {
         <div className="buttons">
           <Link to="/requests">
             <ButtonTwo>
-              Orders! ({request.length})
+              <PiReceiptThin />Orders ({request.length})
             </ButtonTwo>
           </Link>
                   

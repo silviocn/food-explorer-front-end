@@ -3,7 +3,7 @@ import { RiSubtractFill } from 'react-icons/ri'
 import { RiAddLine } from 'react-icons/ri'
 import { useState } from "react"
 import { Button } from '../Button'
-import { CgNotes } from 'react-icons/cg'
+import { PiReceiptThin } from 'react-icons/pi'
 import { api } from "../../services/api"
 
 export function AmountAndButtonInclude({ image, price, name }) {
@@ -31,7 +31,7 @@ export function AmountAndButtonInclude({ image, price, name }) {
     <Container>
       <span className="amount"><a><RiSubtractFill onClick={handleAmountSub} /></a> {amount} <a><RiAddLine onClick={handleAmountSum} /></a></span>
       <Button onClick={handleNewRequest}>
-        <CgNotes />
+        <PiReceiptThin />
         include
       </Button>
     </Container>

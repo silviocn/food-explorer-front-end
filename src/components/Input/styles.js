@@ -43,7 +43,7 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.GRAY_100};
     width: 19.5px;
     height: 19.5px;
-    margin: auto 25px;
+    margin-left: 45px; 
   }
 
   button {

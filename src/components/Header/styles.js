@@ -63,7 +63,7 @@ export const Container = styled.header`
   animation: topdown 1s;
   background-color: ${({ theme }) => theme.COLORS.WHITE_200};
  }
- 
+
   a{
     color: ${({theme}) => theme.COLORS.WHITE_200};
   }
@@ -73,11 +73,8 @@ export const Container = styled.header`
     width: 100%;
     align-items: center;
     gap: 32px;
-    //padding: 32px;
-    //text-align: center;
-    text-align: right;
-    margin-right: 90px;
-    padding: 12px 14px; // novo
+    margin-right: 50px;
+    padding: 12px 14px;
   }
 
   .logo {

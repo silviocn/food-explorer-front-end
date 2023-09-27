@@ -16,23 +16,23 @@ export const Container = styled.div`
     background: transparent;
     color: ${({ theme }) => theme.COLORS.WHITE_200};
     border: none;
-    padding: 10px;
+    padding: 12px 14px;
     height: 100%;
     transition: all 1s;
-    width: 50%;
-    text-align: center;
+    width: 100%;
+    text-align: left;
   }
 
   input.light{
     background: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     color: ${({ theme }) => theme.COLORS.WHITE_200};
     border: none;
-    padding: 10px;
+    padding: 12px 14px;
     height: 100%;
     transition: all 1s;
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
   }
 
   input:focus {

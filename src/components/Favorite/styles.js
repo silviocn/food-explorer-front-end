@@ -6,9 +6,9 @@ export const Container = styled.div`
   margin-top: 20px;
   
   svg {
-    // align-items: end;
+    align-items: end;
     
-    color: ${({ theme }) => theme.COLORS.GRAY_400};
+    color: black; // ${({ theme }) => theme.COLORS.GRAY_400};
     
     transition: transform 0.5s;
   }

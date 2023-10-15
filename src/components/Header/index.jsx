@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { BsFillHexagonFill } from 'react-icons/bs'
-import { PiReceiptThin } from 'react-icons/pi'
+import { PiReceiptLight } from 'react-icons/pi'
 import { FiLogOut } from 'react-icons/fi'
 import { Container, Logout } from './styles'
 import { ButtonTwo } from '../ButtonTwo'
@@ -64,7 +64,7 @@ export function Header() {
         <div className="buttons">
           <Link to="/requests">
             <ButtonTwo>
-              <PiReceiptThin />Orders ({request.length})
+              <PiReceiptLight />Orders ({request.length})
             </ButtonTwo>
           </Link>
                   

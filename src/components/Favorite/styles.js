@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin-top: 20px;
   
   svg {
-    align-items: end;
+    // align-items: end;
     
     color: ${({ theme }) => theme.COLORS.GRAY_400};
     

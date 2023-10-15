@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { BsFillHexagonFill } from 'react-icons/bs'
-import { PiReceiptLight } from 'react-icons/pi'
+import { TfiReceipt } from "react-icons/tfi";
 import { FiLogOut } from 'react-icons/fi'
 import { Container, Logout } from './styles'
 import { ButtonTwo } from '../ButtonTwo'
@@ -11,7 +11,6 @@ import { useAuth } from '../../hooks/auth'
 import { api } from "../../services/api"
 import { useState, useEffect } from "react"
 import { useInput } from '../../hooks/input'
-import { RiAlertFill } from 'react-icons/ri'
 import { StatePage } from '../StatePage'
 import { useStatePage } from '../../hooks/statePage'
 
@@ -64,7 +63,7 @@ export function Header() {
         <div className="buttons">
           <Link to="/requests">
             <ButtonTwo>
-              <PiReceiptLight />Orders ({request.length})
+              <TfiReceipt />Orders ({request.length})
             </ButtonTwo>
           </Link>
                   

@@ -16,7 +16,7 @@ export const Container = styled.header`
  }
  }
  .dark {
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
   padding: 0px;
   height: 150px;
   width: 600px;

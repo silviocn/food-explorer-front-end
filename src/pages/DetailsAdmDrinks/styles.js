@@ -120,10 +120,9 @@ export const Main = styled.main`
     height: 350px;
   }
   svg {
-    align-items: end; // alterado 15/10
     color: ${({ theme }) => theme.COLORS.WHITE_200};
-    width: 24px; // alterado
-    height: 22px; // alterado
+    width: 18px;
+    height: 18px;
   }
   .button {
         background: none;

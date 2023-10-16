@@ -8,13 +8,6 @@ export const Links = styled(Link)`
   border-left: none;
   font-style: italic;
   color: ${({ theme }) => theme.COLORS.WHITE_100};
-
-  @media (max-width: 768px) {
-    html{
-      font-size: 50%;
-    }
-  }
-  
 `;
 
 export const Container = styled.div`
@@ -309,12 +302,6 @@ export const Container = styled.div`
   
   }
 
-  @media (max-width: 768px) {
-    html{
-      font-size: 50%;
-    }
-  }
-
 `;
 
 export const Header = styled.header`
@@ -374,13 +361,6 @@ export const Header = styled.header`
     display: flex;
     gap: 20px;
   }
-
-  @media (max-width: 768px) {
-    html{
-      font-size: 50%;
-    }
-  }
-
 `;
 
 export const Logout = styled.button`
@@ -392,13 +372,6 @@ export const Logout = styled.button`
     width: 22px;
     height: 22px;
   }
-
-  @media (max-width: 768px) {
-    html{
-      font-size: 50%;
-    }
-  }
-
 `;
 
 export const Input = styled.div`
@@ -421,11 +394,4 @@ export const Input = styled.div`
     width: 19.5px;
     height: 19.5px;
   }
-  
-  @media (max-width: 768px) {
-    html{
-      font-size: 50%;
-    }
-  }
-
 `;

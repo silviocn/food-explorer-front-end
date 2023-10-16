@@ -1,8 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.footer`
+@media (max-width: 924px) {
+      width: 100%;
+  }
+@media (max-width: 768px) {
+      width: 768px;
+  }
 @media (max-width: 600px) {
-      width: 600px;
+      width: 100%;
   }
   .dark {
   position: absolute;

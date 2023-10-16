@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 
 export const Container = styled.footer`
-@media (max-width: 600px) {
-      width: 600px;
-  }
   .dark {
   position: absolute;
   bottom: 0;
@@ -19,7 +16,16 @@ export const Container = styled.footer`
   justify-content: space-between;
   animation: downtop 1s;
   @media (max-width: 900px) {
-    padding: 10px;
+    width: 100%;
+    padding: 0px;
+  }
+  @media (max-width: 750px) {
+      width: 100%px;
+      padding: 5px;
+  }
+  @media (max-width: 600px) {
+      width: 600px;
+      font-size: 50%;
   }
   }
   .light {

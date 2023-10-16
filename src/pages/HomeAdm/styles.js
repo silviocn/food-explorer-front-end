@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const Links = styled(Link)`
-  padding: 0.2rem 1rem;
+  padding: 2px 10px;
   display: flex;
   margin-left: -10px;
   border-left: none;
@@ -14,24 +14,24 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: 10.4rem auto 7.7rem; // alterado
+  grid-template-rows: 104px auto 77px;
   grid-template-areas: "header" "content" "footer";
   main::-webkit-scrollbar {
-  width: 2rem;
+  width: 20px;
   }
   main::-webkit-scrollbar-thumb {
   background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
-  border-radius: 2rem;
-  width: 0.1rem;
+  border-radius: 20px;
+  width: 1px;
   background-clip: padding-box; /*para as bordas ficarem transparentes e com isso dar a impressão que tem uma margem nos lados da borda*/
-  border: 0.5rem solid rgba(0, 0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0);
   }
   main::-webkit-scrollbar-thumb:hover {
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
-  border-radius: 2rem;
-  width: 0.1rem;
+  border-radius: 20px;
+  width: 1px;
   background-clip: padding-box; /*para as bordas ficarem transparentes e com isso dar a impressão que tem uma margem nos lados da borda*/
-  border: 0.5rem solid rgba(0, 0, 0, 0);
+  border: 5px solid rgba(0, 0, 0, 0);
   }
   main {
     width: 100%;
@@ -42,10 +42,10 @@ export const Container = styled.div`
     display: none;
   }
   #title{
-    padding: 4.8rem 12.5rem 4rem;
+    padding: 48px 125px 40px;
     font-family: 'Poppins';
     font-weight: 500;
-    font-size: 3.2rem;
+    font-size: 32px;
     line-height: 140%;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
     animation: right 1s;
@@ -62,10 +62,10 @@ export const Container = styled.div`
   }
   .logoHome {
     margin: 0 auto;
-    margin-top: 8rem;
+    margin-top: 80px;
     background: ${({ theme }) => theme.COLORS.BACKGROUND_200};
-    width: 112rem;
-    height: 26rem;
+    width: 1120px;
+    height: 260px;
     display: flex;
     animation: left 1s;
   @keyframes left {
@@ -79,22 +79,22 @@ export const Container = styled.div`
       }
     }
     img {
-      margin-top: -5rem;
-      margin-left: -4rem;
+      margin-top: -50px;
+      margin-left: -40px;
     }
     .addFoods{
     display: flex;
-    gap: 0.8rem;
+    gap: 8px;
     white-space: nowrap;
     align-items: center;
     span{
-      border-radius: 1rem 0 0 0;
-      margin-left: 60rem;
-      border: 0.1rem solid ${({ theme }) => theme.COLORS.GRAY_300};
-      padding: 0.4rem 1rem;
+      border-radius: 10px 0 0 0;
+      margin-left: 600px;
+      border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
+      padding: 4px 10px;
     }
     a{
-      padding: 0.4rem 1rem;
+      padding: 4px 10px;
       display: flex;
       margin-left: -10px;
       border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
@@ -103,52 +103,52 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.COLORS.WHITE_100};
     }
     a:last-child{
-      border-radius: 0 1rem 1rem 0;
+      border-radius: 0 10px 10px 0;
     }
   }
     .requests{
-      border-radius: 0 0 1rem 1rem;
-      padding: 0.4rem 1rem;
+      border-radius: 0 0 10px 10px;
+      padding: 4px 10px;
       display: flex;
-      margin-left: 60rem;
-      margin-top: -0.9px;
+      margin-left: 600px;
+      margin-top: -9px;
       font-style: italic;
-      border: 0.1rem solid ${({ theme }) => theme.COLORS.GRAY_300};
+      border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
       border-top: none;
       
   }
   }
   .logoText{
-    margin-left: -50rem;
+    margin-left: -500px;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 8px;
     align-items: start;
     justify-content: center;
     white-space: nowrap;
   
   
   h1 {
-      margin-left: 60rem;
+      margin-left: 600px;
       font-family: 'Poppins';
       font-weight: 500;
-      font-size: 4rem;
+      font-size: 40px;
       line-height: 140%;
       color: ${({ theme }) => theme.COLORS.WHITE_100};
     }
     p {
-      margin-left: 60rem;
+      margin-left: 600px;
       font-family: 'Poppins';
       color: ${({ theme }) => theme.COLORS.WHITE_100};
       font-weight: 400;
-      font-size: 1.6rem;
+      font-size: 16px;
       line-height: 140%;
     }
   }
   .container {
     position: relative;
-    margin: 0px 12.5rem;
-    height: 51.2rem;
+    margin: 0px 125px;
+    height: 512px;
     animation: scale 1s;
  @keyframes scale {
       0% {
@@ -161,7 +161,7 @@ export const Container = styled.div`
       }
     }
     .arrowOne{
-      width: 8rem;
+      width: 80px;
       height: 512px;
       background:  ${({ theme }) => theme.COLORS.BACKGROUND_000};
       position: absolute;
@@ -170,8 +170,8 @@ export const Container = styled.div`
       justify-content: center;
       svg{
       cursor: pointer;
-      width: 4rem;
-      height: 4rem;
+      width: 40px;
+      height: 40px;
       color: ${({ theme }) => theme.COLORS.WHITE_100};
     }
     button {
@@ -185,9 +185,9 @@ export const Container = styled.div`
     }
     .arrowTwo{
       position: absolute;
-      width: 8rem;
+      width: 80px;
       right: 0;
-      height: 51.2rem;
+      height: 512px;
       background:  ${({ theme }) => theme.COLORS.BACKGROUND_300};
       position: absolute;
       display: flex;
@@ -195,8 +195,8 @@ export const Container = styled.div`
       justify-content: center;
       svg{
         cursor: pointer;
-        width: 4rem;
-        height: 4rem;
+        width: 40px;
+        height: 40px;
         color: ${({ theme }) => theme.COLORS.WHITE_100};
     }
     button {
@@ -210,7 +210,7 @@ export const Container = styled.div`
     }
   }
   .container:last-child{
-    margin-bottom: 6rem;
+    margin-bottom: 60px;
   }
   }
     .listFood{
@@ -222,11 +222,11 @@ export const Container = styled.div`
   .listFoods{
     display: flex;
     flex-direction: row;
-    gap: 2.7rem;
+    gap: 27px;
     .cardFood{
       background: ${({ theme }) => theme.COLORS.BACKGROUND_400};
-      width: 30rem;
-      height: 51.2rem;
+      width: 300px;
+      height: 512px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -237,20 +237,20 @@ export const Container = styled.div`
         justify-content: center;
         font-family: 'Poppins';
         font-weight: 700;
-        font-size: 2.4rem;
+        font-size: 24px;
         line-height: 140%;
         svg {
-          width: 3rem;
-          height: 3rem;
+          width: 30px;
+          height: 30px;
         }
       }
       p{
-        width: 22rem;
+        width: 220px;
         font-family: 'Roboto';
         font-weight: 400;
-        font-size: 1.4rem;
+        font-size: 14px;
         line-height: 160%;
-        margin: 1.8rem auto 0px;
+        margin: 18px auto 0px;
         text-align: center;
         color: ${({ theme }) => theme.COLORS.GRAY_300};
 
@@ -262,17 +262,17 @@ export const Container = styled.div`
       }
       img {
         border-radius: 50%;
-        width: 17.6rem;
-        height: 17.6rem;
-        margin: 3rem 6.2rem 1.6rem 6.2rem;
+        width: 176px;
+        height: 176px;
+        margin: 30px 62px 16px 62px;
       }
       .button {
-        margin-top: 2rem;
+        margin-top: 20px;
         background: none;
         border: none;
         svg {
-          width: 3rem;
-          height: 3rem;
+          width: 30px;
+          height: 30px;
           color: ${({ theme }) => theme.COLORS.GRAY_400};
           transition: transform 0.5s;
         }
@@ -282,20 +282,20 @@ export const Container = styled.div`
       }
       svg {
         color: ${({ theme }) => theme.COLORS.WHITE_200};
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 18px;
+        height: 18px;
     }
     .price {
       font-family: 'Roboto';
       font-weight: 400;
-      font-size: 3.2rem;
+      font-size: 32px;
       line-height: 160%;
       color: ${({ theme }) => theme.COLORS.BLUE_200};
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-top: 1.6rem;
-      margin-bottom: 1.6rem;
+      margin-top: 16px;
+      margin-bottom: 16px;
     }
     
   }
@@ -306,14 +306,14 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   grid-area: header;
-  height: 10.4rem;
+  height: 104px;
   width: 100%;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 12.5rem;
+  padding: 0 125px;
   white-space: nowrap;
   animation: topdown 1s;
   @keyframes topdown {
@@ -331,62 +331,62 @@ export const Header = styled.header`
   }
   .gap {
     display: flex;
-    width: 80rem;
+    width: 800px;
     align-items: center;
-    gap: 3.2rem;
+    gap: 32px;
   }
   .logo {
     display: flex;
     align-items: center;
-    gap: 1.1rem;
-    padding-right: 3.7rem;
+    gap: 11px;
+    padding-right: 37px;
     svg {
       color: ${({ theme }) => theme.COLORS.BLUE_100};
-      width: 2.92rem;
-      height: 2.92rem;
+      width: 29.2px;
+      height: 29.2px;
     }
     span {
       font-family: 'Roboto';
       color: ${({ theme }) => theme.COLORS.WHITE_200};
       font-weight: bold;
-      font-size: 2.5rem;
+      font-size: 25px;
     }
   }
   .buttons {
     display: flex;
-    gap: 2rem;
+    gap: 20px;
   }
 `;
 
 export const Logout = styled.button`
   border: none;
   background: none;
-  padding-left: 3.7rem;
+  padding-left: 37px;
   svg {
     color: ${({ theme }) => theme.COLORS.WHITE_200};
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 22px;
+    height: 22px;
   }
 `;
 
 export const Input = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_500};
   width: 100%;
-  height: 4.8rem;
+  height: 48px;
   display: flex;
   align-items: center;
-  border-radius: 0.5rem;
-  padding: 1.6rem;
+  border-radius: 5px;
+  padding: 16px;
   input {
     color: ${({ theme }) => theme.COLORS.WHITE_200};
-    padding-left: 1.6rem;
+    padding-left: 16px;
     width: 100%;
     background: transparent;
     border: none;
   }
   svg {
     color: ${({ theme }) => theme.COLORS.GRAY_100};
-    width: 1.95rem;
-    height: 1.95rem;
+    width: 19.5px;
+    height: 19.5px;
   }
 `;

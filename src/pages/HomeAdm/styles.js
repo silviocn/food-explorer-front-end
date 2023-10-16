@@ -334,6 +334,11 @@ export const Header = styled.header`
     width: 800px;
     align-items: center;
     gap: 32px;
+    @media (max-width: 600px) { // acrescentado 
+      display: block;
+      gap: 16px;
+      width: 50%;
+     };
   }
   .logo {
     display: flex;

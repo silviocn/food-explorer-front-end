@@ -12,6 +12,7 @@ export const Links = styled(Link)`
 
 export const Container = styled.div`
   width: 100%;
+  max-width: 1360px; // adicionado
   height: 100vh;
   display: grid;
   grid-template-rows: 104px auto 77px;
@@ -35,6 +36,7 @@ export const Container = styled.div`
   }
   main {
     width: 100%;
+    max-width: 1360px; // adicionado
     grid-area: content;
     overflow: auto;
     
@@ -218,6 +220,7 @@ export const Container = styled.div`
       overflow-x: hidden;
       scroll-behavior: smooth;
       width: 100%;
+      max-width: 1360px; // adicionado
   }
   .listFoods{
     display: flex;
@@ -308,6 +311,7 @@ export const Header = styled.header`
   grid-area: header;
   height: 104px;
   width: 100%;
+  max-width: 1360px; // adicionado
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   border: none;
   display: flex;
@@ -372,6 +376,7 @@ export const Logout = styled.button`
 export const Input = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_500};
   width: 100%;
+  max-width: 1360px; // adicionado
   height: 48px;
   display: flex;
   align-items: center;

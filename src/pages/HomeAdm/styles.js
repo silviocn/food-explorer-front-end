@@ -321,8 +321,9 @@ export const Header = styled.header`
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 50%;
     align-items: center;
+    justify-content: center;
+    padding: 1px;
    }
   @keyframes topdown {
       0% {
@@ -344,7 +345,7 @@ export const Header = styled.header`
     gap: 32px;
     @media (max-width: 820px) { // Ipad Air
       flex-direction: column;
-      width: 30%;
+      width: 50%;
       gap: 10px;
     }
   }
@@ -390,6 +391,9 @@ export const Logout = styled.button`
     color: ${({ theme }) => theme.COLORS.WHITE_200};
     width: 22px;
     height: 22px;
+  }
+  @media (max-width: 820px) { // Ipad Air
+    padding: 0px;
   }
 `;
 

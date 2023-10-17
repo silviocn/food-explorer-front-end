@@ -16,16 +16,6 @@ export const Container = styled.header`
  }
  }
  .dark {
-  @media (max-width: 800px) {
-  padding: 0px;
-  height: 150px;
-  width: 600px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
- }
   grid-area: header;
   height: 104px;
   width: 100%;
@@ -38,9 +28,7 @@ export const Container = styled.header`
   white-space: nowrap;
   animation: topdown 1s;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
- }
- .light {
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
   padding: 0px;
   height: 150px;
   width: 600px;
@@ -50,6 +38,8 @@ export const Container = styled.header`
   justify-content: center;
   flex-direction: column;
  }
+ }
+ .light {
   grid-area: header;
   height: 104px;
   width: 100%;
@@ -62,6 +52,16 @@ export const Container = styled.header`
   white-space: nowrap;
   animation: topdown 1s;
   background-color: ${({ theme }) => theme.COLORS.WHITE_200};
+  @media (max-width: 800px) {
+  padding: 0px;
+  height: 150px;
+  width: 600px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ }
  }
 
   a{
@@ -85,7 +85,7 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.BLUE_100};
       min-width: 29.2px;
       min-height: 29.2px;
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         position: absolute;
         left: 10px;
         top: 10px;
@@ -95,7 +95,7 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
       min-width: 29.2px;
       min-height: 29.2px;
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         position: absolute;
         left: 10px;
         top: 10px;
@@ -106,8 +106,8 @@ export const Container = styled.header`
       color: ${({theme}) => theme.COLORS.WHITE_200};
       font-weight: bold;
       font-size: 25px;
-      @media (max-width: 600px) {
-        font-size: 0px;
+      @media (max-width: 800px) {
+        font-size: 10px;
       }
     }
     .spanLight {
@@ -115,8 +115,8 @@ export const Container = styled.header`
       color: ${({theme}) => theme.COLORS.BACKGROUND_800};
       font-weight: bold;
       font-size: 25px;
-      @media (max-width: 600px) {
-        font-size: 0px;
+      @media (max-width: 800px) {
+        font-size: 10px;
       }
     }
   }
@@ -126,6 +126,10 @@ export const Container = styled.header`
     gap: 10px;
     width: 216px;
     height: 56px;
+    @media (max-width: 600px) {
+    width: 152px;
+    height: 18px;
+    }
   }
 
   @keyframes topdown {
@@ -163,7 +167,7 @@ export const Container = styled.header`
     text-align: center;
     border-radius: 0px 0 8px 8px;
     animation: leftAlert 1s;
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         display: none;
       }
   }
@@ -208,11 +212,21 @@ export const Logout = styled.button`
     color: ${({theme}) => theme.COLORS.BACKGROUND_800};
     width: 22px;
     height: 22px;
+    @media (max-width: 800px) {
+    padding: 2px;
+    height: 15px;
+    width: 15px;
+    }
   }
   .LogoutLight {
     color: ${({theme}) => theme.COLORS.WHITE_200};
     width: 22px;
     height: 22px;
+    @media (max-width: 800px) {
+    padding: 2px;
+    height: 15px;
+    width: 15px;
+    }
   }
   
 `;

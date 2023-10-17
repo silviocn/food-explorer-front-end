@@ -366,8 +366,8 @@ export const Header = styled.header`
       font-size: 25px;
     }
     @media (max-width: 820px) { // Ipad Air
-      gap: 2px;
-      padding-right: 2px;
+      gap: 5px;
+      padding: 1px;
       svg {
         width: 15px;
         height: 15px;

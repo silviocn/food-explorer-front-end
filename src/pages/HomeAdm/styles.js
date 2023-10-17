@@ -16,6 +16,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: 104px auto 77px;
   grid-template-areas: "header" "content" "footer";
+
   main::-webkit-scrollbar {
   width: 20px;
   }
@@ -316,11 +317,13 @@ export const Header = styled.header`
   padding: 0 125px;
   white-space: nowrap;
   animation: topdown 1s;
-  @media (max-width: 600px) { // acrescentado 
-    display: block;
-    gap: 16px;
+  @media (max-width: 820px) { // Ipad Air
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     width: 50%;
-   };
+    align-items: center;
+   }
   @keyframes topdown {
       0% {
         opacity: 0;
@@ -339,6 +342,11 @@ export const Header = styled.header`
     width: 800px;
     align-items: center;
     gap: 32px;
+    @media (max-width: 820px) { // Ipad Air
+      flex-direction: column;
+      width: 30%;
+      gap: 10px;
+    }
   }
   .logo {
     display: flex;
@@ -355,6 +363,17 @@ export const Header = styled.header`
       color: ${({ theme }) => theme.COLORS.WHITE_200};
       font-weight: bold;
       font-size: 25px;
+    }
+    @media (max-width: 820px) { // Ipad Air
+      gap: 2px;
+      padding-right: 2px;
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+      span {
+        font-size: 15px;
+      }
     }
   }
   .buttons {

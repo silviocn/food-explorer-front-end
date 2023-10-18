@@ -13,7 +13,7 @@ import { Container, Logout, Header, Input, Links } from './styles'
 import { BiSearchAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { useAuthAdm } from '../../hooks/authAdm'
-import { TfiPencil } from 'react-icons/tfi'
+import { TfiPencil, TfiReceipt } from 'react-icons/tfi'
 import { useStatePage } from '../../hooks/statePage'
 import { ButtonTwo } from '../../components/ButtonTwo'
 

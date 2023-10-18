@@ -358,7 +358,6 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 125px;
   padding: 0px 125px;
   white-space: nowrap;
   animation: topdown 1s;
@@ -415,6 +414,13 @@ export const Header = styled.header`
       color: ${({ theme }) => theme.COLORS.WHITE_200};
       font-weight: bold;
       font-size: 25px;
+    }
+    h2 {
+      font-family: 'Roboto';
+      color: ${({ theme }) => theme.COLORS.BLUE_200};
+      font-weight: small;
+      font-size: 10px;
+      align-self: right;
     }
     @media (max-width: 820px) { // Ipad Air
       gap: 5px;

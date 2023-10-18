@@ -186,6 +186,7 @@ export const Container = styled.div`
   }
     }
   }
+  
   .container {
     position: relative;
     margin: 0px 125px;

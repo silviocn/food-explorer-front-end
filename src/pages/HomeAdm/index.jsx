@@ -14,6 +14,7 @@ import { BiSearchAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { useAuthAdm } from '../../hooks/authAdm'
 import { GoTrashcan } from 'react-icons/go'
+import { useStatePage } from '../../hooks/statePage'
 
 export function HomeAdm() {
   const [search, setSearch] = useState("")
@@ -22,6 +23,7 @@ export function HomeAdm() {
   const [foodsDesserts, setFoodsDesserts] = useState([])
   const [requests, setRequests] = useState([])
   const [request, setRequest] = useState([])
+  const { statePage } = useStatePage()
 
   useEffect(() => {
     async function fetchRequests() {

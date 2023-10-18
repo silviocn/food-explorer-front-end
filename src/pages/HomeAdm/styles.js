@@ -186,7 +186,7 @@ export const Container = styled.div`
   }
     }
   }
-  
+
   .container {
     position: relative;
     margin: 0px 125px;
@@ -421,9 +421,15 @@ export const Header = styled.header`
       }
     }
   }
-  .buttons {
+  /*.buttons {
     display: flex;
     gap: 20px;
+  }*/
+  .buttons {
+    display: flex;
+    gap: 10px;
+    width: 216px;
+    height: 56px;
   }
 `;
 

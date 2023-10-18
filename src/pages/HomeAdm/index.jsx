@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom'
 import { useAuthAdm } from '../../hooks/authAdm'
 import { TfiPencil } from 'react-icons/tfi'
 import { useStatePage } from '../../hooks/statePage'
+import { ButtonTwo } from '../../components/ButtonTwo'
 
 export function HomeAdm() {
   const [search, setSearch] = useState("")
@@ -150,9 +151,18 @@ export function HomeAdm() {
             <input type="text" placeholder="Search by your meals" onChange={e => setSearch(e.target.value)} />
           </Input>
         </div>
-        <Logout onClick={handleSignOut}>
-          <FiLogOut />
-        </Logout>
+
+        <div className="buttons">
+          <Link to="/requests">
+            <ButtonTwo>
+              <TfiReceipt />Orders ({request.length})
+            </ButtonTwo>
+          </Link>
+          
+          <Logout onClick={handleSignOut}>
+            <FiLogOut />
+          </Logout>
+        </div>
       </Header>
 
       <main>

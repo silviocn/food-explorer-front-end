@@ -7,6 +7,7 @@ import { api } from "../../services/api"
 import { Navigate, useParams } from 'react-router-dom'
 import { Img } from '../../components/Img'
 import { GoTrashcan } from 'react-icons/go'
+import { TfiPencil } from 'react-icons/tfi'
 import { useNavigate } from 'react-router-dom'
 
 export function DetailsAdm() {
@@ -29,6 +30,10 @@ export function DetailsAdm() {
       await api.delete(`/dishes/${id}`)
       navigate(-1)
     }
+  }
+
+  async function handleEditDish(id) {
+    navigate(`/dishes/${id}`)
   }
 
   return (
@@ -58,6 +63,9 @@ export function DetailsAdm() {
             <span className="price">R$ {String(Number(data.price).toFixed(2)).replace(".", ",")}</span>
             <button className="button" onClick={() => handleDeleteDish(data.id)}>
               <GoTrashcan /> Delete
+            </button>
+            <button className='button' Onclick={() => handleEditDish(data.id)}>
+              <TfiPencil /> Edit Dish
             </button>
           </div>
         </div>

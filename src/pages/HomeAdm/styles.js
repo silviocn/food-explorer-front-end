@@ -358,7 +358,8 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 125px;
+  margin: 0px 125px;
+  padding: 0px 125px;
   white-space: nowrap;
   animation: topdown 1s;
   @media (max-width: 820px) { // Ipad Air
@@ -390,9 +391,9 @@ export const Header = styled.header`
   }
   .gap {
     display: flex;
-    width: 800px;
+    width: 580px;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
     @media (max-width: 820px) { // Ipad Air
       flex-direction: column;
       width: 50%;

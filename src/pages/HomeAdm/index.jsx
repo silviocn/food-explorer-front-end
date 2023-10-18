@@ -143,6 +143,7 @@ export function HomeAdm() {
         <div className="logo">
           <BsFillHexagonFill />
           <span>food explorer</span>
+          <h2>admin</h2>
         </div>
         
         <div className="gap">

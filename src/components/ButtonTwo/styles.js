@@ -9,7 +9,7 @@ border: none;
   color: ${({theme}) => theme.COLORS.WHITE_200};
   
   width: 216px;
-  height: 56px;
+  height: 48px;
   border: 0;
   font-size: 14px;
   padding: 0 15px;  
@@ -26,6 +26,10 @@ border: none;
   }
   &:disabled{
     opacity: 0.5;
+  }
+  @media (max-width: 820px) { // Ipad Air
+    width: 152px;
+    height: 36px;
   }
 }
 .buttonLight {

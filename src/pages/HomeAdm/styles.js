@@ -420,7 +420,9 @@ export const Header = styled.header`
       color: ${({ theme }) => theme.COLORS.BLUE_200};
       font-weight: small;
       font-size: 10px;
-      align-self: right;
+      position: absolute;
+      margin-left: 160px;
+      margin-top: 45px;
     }
     @media (max-width: 820px) { // Ipad Air
       gap: 5px;
@@ -431,6 +433,11 @@ export const Header = styled.header`
       }
       span {
         font-size: 15px;
+      }
+      h2 {
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 5px;
       }
     }
   }

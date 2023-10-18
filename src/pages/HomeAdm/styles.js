@@ -217,6 +217,8 @@ export const Container = styled.div`
     .listFood{
       display: flex;
       overflow-x: hidden;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
       scroll-behavior: smooth;
       width: 100%;
   }

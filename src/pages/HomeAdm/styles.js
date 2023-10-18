@@ -222,8 +222,7 @@ export const Container = styled.div`
       scroll-behavior: smooth;
       width: 100%;
       align-self: center;
-      margin: 150px;
-  }
+    }
   .listFoods{
     display: flex;
     flex-direction: row;

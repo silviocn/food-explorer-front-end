@@ -384,12 +384,12 @@ export const Header = styled.header`
   }
   .gap {
     display: flex;
-    width: 580px;
+    width: 800px;
     align-items: center;
     gap: 16px;
     @media (max-width: 820px) { // Ipad Air
       flex-direction: column;
-      width: 50%;
+      width: 30%;
       gap: 10px;
     }
   }

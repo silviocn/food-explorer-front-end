@@ -80,7 +80,6 @@ export function HomeAdm() {
 
   async function handleEditDish(id) {
     if (confirm("Are you sure you want to edit?"))
-    navigate (`/details/${id}`)
     await api.update(`/dishes/${id}`)
   }
 
@@ -192,7 +191,7 @@ export function HomeAdm() {
               {
                 foods.map(food => (
                   <div className="cardFood" key={String(food.id)} >
-                    <Link to="/details/${food.id}">
+                    <Link to={`/details/${food.id}`}>
                       <button className="button" onClick={() => handleEditDish(food.id)}>
                         <TfiPencil />
                       </button>

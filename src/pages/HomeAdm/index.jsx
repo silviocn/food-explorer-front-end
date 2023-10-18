@@ -192,9 +192,11 @@ export function HomeAdm() {
               {
                 foods.map(food => (
                   <div className="cardFood" key={String(food.id)} >
-                    <button className="button" onClick={() => handleEditDish(food.id)}>
-                      <TfiPencil />
-                    </button>
+                    <Link to="/details/${food.id}">
+                      <button className="button" onClick={() => handleEditDish(food.id)}>
+                        <TfiPencil />
+                      </button>
+                    </Link>
                     <img src={`${api.defaults.baseURL}/files/${food.image}`} alt="dish image" />
                     <Link to={`/detailsadm/${food.id}`}><a><h2>{food.name}<BiChevronRight /></h2></a></Link>
                     <p>{food.description}</p>

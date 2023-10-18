@@ -61,65 +61,67 @@ export const Container = styled.div`
       }
     }
   }
-  .logoHome {
+  .logoHomeDark {
+    @media (max-width: 600px) {
+      width: 600px;
+      margin: 100px 0 0 0;
+      height: 150px;
+  }
     margin: 0 auto;
     margin-top: 80px;
     background: ${({ theme }) => theme.COLORS.BACKGROUND_200};
     width: 1120px;
     height: 260px;
     display: flex;
-    animation: left 1s;
-  @keyframes left {
-      0% {
-        opacity: 0;
-        transform: translateX(-30px)
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0)
-      }
-    }
+    animation: topdown 1s;
     img {
+      @media (max-width: 600px) {
+      width: 200px;
+      height: 150px;
+      margin-top: 0px;
+  }
       margin-top: -50px;
       margin-left: -40px;
     }
-    .addFoods{
+  }
+  .logoHomeLight {
+    @media (max-width: 600px) {
+      width: 600px;
+      margin: 100px 0 0 0;
+      height: 150px;
+  }
+    margin: 0 auto;
+    margin-top: 80px;
+    background: ${({ theme }) => theme.COLORS.BACKGROUND_1200};
+    width: 1120px;
+    height: 260px;
     display: flex;
-    gap: 8px;
-    white-space: nowrap;
-    align-items: center;
-    span{
-      border-radius: 10px 0 0 0;
-      margin-left: 600px;
-      border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
-      padding: 4px 10px;
-    }
-    a{
-      padding: 4px 10px;
-      display: flex;
-      margin-left: -10px;
-      border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
-      border-left: none;
-      font-style: italic;
-      color: ${({ theme }) => theme.COLORS.WHITE_100};
-    }
-    a:last-child{
-      border-radius: 0 10px 10px 0;
+    animation: topdown 1s;
+    img {
+      @media (max-width: 600px) {
+      width: 200px;
+      height: 150px;
+      margin-top: 0px;
+  }
+      margin-top: -50px;
+      margin-left: -40px;
     }
   }
-    .requests{
-      border-radius: 0 0 10px 10px;
-      padding: 4px 10px;
-      display: flex;
-      margin-left: 600px;
-      margin-top: -9px;
-      font-style: italic;
-      border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
-      border-top: none;
-      
+  
+  @keyframes topdown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px)
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+  .logoTextDark{
+    @media (max-width: 600px) {
+    margin-left: -650px;
   }
-  }
-  .logoText{
     margin-left: -500px;
     display: flex;
     flex-direction: column;
@@ -127,9 +129,10 @@ export const Container = styled.div`
     align-items: start;
     justify-content: center;
     white-space: nowrap;
-  
-  
   h1 {
+    @media (max-width: 600px) {
+      font-size: 20px;
+  }
       margin-left: 600px;
       font-family: 'Poppins';
       font-weight: 500;
@@ -144,6 +147,43 @@ export const Container = styled.div`
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
+      @media (max-width: 600px) {
+    font-size: 14px;
+  }
+    }
+  }
+  .logoTextLight{
+    @media (max-width: 600px) {
+    margin-left: -650px;
+  }
+    margin-left: -500px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    justify-content: center;
+    white-space: nowrap;
+  h1 {
+    @media (max-width: 600px) {
+      font-size: 20px;
+  }
+      margin-left: 600px;
+      font-family: 'Poppins';
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 140%;
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    }
+    p {
+      margin-left: 600px;
+      font-family: 'Poppins';
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 140%;
+      @media (max-width: 600px) {
+    font-size: 14px;
+  }
     }
   }
   .container {

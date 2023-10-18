@@ -158,14 +158,9 @@ export function HomeAdm() {
           <img src={HomeImage} alt="home image" />
           
           <div className="logoText">
-            <div className="addFoods">
-              <span>Add new:</span>
-              <Links to="/editdish">Dishes</Links>
-              <Links to="/editdesserts">Desserts</Links>
-              <Links to="/editdrinks">Beverages</Links>
-            </div>
-            <div className="requests">
-              <Links to="/requestsadm">Manage customer order</Links>
+          <div className={statePage ? "logoTextLight" : "logoTextDark"}>
+              <h1 >Unparalleled flavors</ h1>
+              <p>Feel the care of our dishes preparation with selected ingredients</p>
             </div>
           </div>
 

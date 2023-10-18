@@ -13,7 +13,7 @@ import { Container, Logout, Header, Input, Links } from './styles'
 import { BiSearchAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { useAuthAdm } from '../../hooks/authAdm'
-import { GoTrashcan } from 'react-icons/go'
+import { PiPencilSimpleBold } from 'react-icons/Pi'
 import { useStatePage } from '../../hooks/statePage'
 
 export function HomeAdm() {
@@ -180,7 +180,7 @@ export function HomeAdm() {
                 foods.map(food => (
                   <div className="cardFood" key={String(food.id)} >
                     <button className="button" onClick={() => handleDeleteDish(food.id)}>
-                      <GoTrashcan />
+                      <PiPencilSimpleBold />
                     </button>
                     <img src={`${api.defaults.baseURL}/files/${food.image}`} alt="dish image" />
                     <Link to={`/detailsadm/${food.id}`}><a><h2>{food.name}<BiChevronRight /></h2></a></Link>
@@ -211,7 +211,7 @@ export function HomeAdm() {
                 foodsDesserts.map(food => (
                   <div className="cardFood" key={String(food.id)} >
                     <button className="button" onClick={() => handleDeleteDessert(food.id)}>
-                      <GoTrashcan />
+                      <PiPencilSimpleBold />
                     </button>
                     <img src={`${api.defaults.baseURL}/files/${food.image}`} alt="dessert image" />
                     <Link to={`/detailsadmdesserts/${food.id}`}><a><h2>{food.name}<BiChevronRight /></h2></a></Link>
@@ -240,7 +240,7 @@ export function HomeAdm() {
                 foodsDrinks.map(food => (
                   <div className="cardFood" key={String(food.id)} >
                     <button className="button" onClick={() => handleDeleteDrink(food.id)}>
-                      <GoTrashcan />
+                      <PiPencilSimpleBold />
                     </button>
                     <img src={`${api.defaults.baseURL}/files/${food.image}`} alt="drink image" />
                     <Link to={`/detailsadmdrinks/${food.id}`}><a><h2>{food.name}<BiChevronRight /></h2></a></Link>

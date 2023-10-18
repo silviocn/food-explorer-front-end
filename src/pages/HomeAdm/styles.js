@@ -221,6 +221,8 @@ export const Container = styled.div`
       grid-gap: 20px;
       scroll-behavior: smooth;
       width: 100%;
+      align-self: center;
+      margin: 150px;
   }
   .listFoods{
     display: flex;

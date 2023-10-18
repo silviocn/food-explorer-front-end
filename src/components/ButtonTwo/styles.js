@@ -7,7 +7,6 @@ border: none;
 .buttonDark {
   background-color: ${({theme}) => theme.COLORS.RED_100};
   color: ${({theme}) => theme.COLORS.WHITE_200};
-  
   width: 216px;
   height: 48px;
   border: 0;

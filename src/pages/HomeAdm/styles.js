@@ -368,12 +368,6 @@ export const Header = styled.header`
     gap: 5px;
     align-items: center;
     justify-content: center;
-    .buttons {
-      display: flex;
-      gap: 5px;
-      width: 152px;
-      height: 44px;
-    }
    }
   @keyframes topdown {
       0% {
@@ -445,12 +439,6 @@ export const Header = styled.header`
     display: flex;
     gap: 20px;
   }*/
-  .buttons {
-    display: flex;
-    gap: 10px;
-    width: 216px;
-    height: 48px;
-  }
 `;
 
 export const Logout = styled.button`

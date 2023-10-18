@@ -13,7 +13,7 @@ import { Container, Logout, Header, Input, Links } from './styles'
 import { BiSearchAlt } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import { useAuthAdm } from '../../hooks/authAdm'
-import { PiPencilSimpleBold } from 'react-icons/Pi'
+import { PiPencilSimpleBold } from 'react-icons/pi'
 import { useStatePage } from '../../hooks/statePage'
 
 export function HomeAdm() {

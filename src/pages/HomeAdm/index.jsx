@@ -154,17 +154,14 @@ export function HomeAdm() {
       </Header>
 
       <main>
-        <div className="logoHome">
-          <img src={HomeImage} alt="home image" />
-          
-          <div className="logoText">
-          <div className={statePage ? "logoTextLight" : "logoTextDark"}>
+        <div className={statePage ? "logoHomeLight" : "logoHomeDark"}>
+            <img src={HomeImage} alt="Home Image" />
+            <div className={statePage ? "logoTextLight" : "logoTextDark"}>
               <h1 >Unparalleled flavors</ h1>
               <p>Feel the care of our dishes preparation with selected ingredients</p>
             </div>
-          </div>
-
         </div>
+
         <h2 id="title">Main Dishes</h2>
         <div className="container">
           <div className="arrowOne" onClick={handleLeftClick}>

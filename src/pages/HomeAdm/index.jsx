@@ -76,8 +76,11 @@ export function HomeAdm() {
 
   }, [search, foodsDesserts])
 
+  const navigate = useNavigate()
+
   async function handleEditDish(id) {
     if (confirm("Are you sure you want to edit?"))
+    navigate (`/details/${id}`)
     await api.update(`/dishes/${id}`)
   }
 
@@ -129,7 +132,6 @@ export function HomeAdm() {
   }
 
   const { signOut } = useAuthAdm()
-  const navigate = useNavigate()
 
   function handleSignOut() {
     navigate("/adm")

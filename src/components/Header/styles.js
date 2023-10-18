@@ -125,7 +125,7 @@ export const Container = styled.header`
     display: flex;
     gap: 10px;
     width: 216px;
-    height: 56px;
+    height: 58px;
   }
 
   @keyframes topdown {

@@ -155,7 +155,7 @@ export function HomeAdm() {
         <div className="buttons">
           <Link to="/requests">
             <ButtonTwo>
-              <TfiReceipt />Orders ({request.length})
+              <TfiReceipt />New dish ({request.length})
             </ButtonTwo>
           </Link>
           

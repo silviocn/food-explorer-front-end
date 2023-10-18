@@ -76,19 +76,19 @@ export function HomeAdm() {
 
   }, [search, foodsDesserts])
 
-  async function handleDeleteDish(id) {
-    if (confirm("Are you sure you want to delete?"))
-    await api.delete(`/dishes/${id}`)
+  async function handleEditDish(id) {
+    if (confirm("Are you sure you want to edit?"))
+    await api.update(`/dishes/${id}`)
   }
 
-  async function handleDeleteDessert(id) {
-    if (confirm("Are you sure you want to delete?"))
-    await api.delete(`/desserts/${id}`)
+  async function handleEditDish(id) {
+    if (confirm("Are you sure you want to edit?"))
+    await api.update(`/desserts/${id}`)
   }
 
-  async function handleDeleteDrink(id) {
-    if (confirm("Are you sure you want to delete?"))
-    await api.delete(`/drinks/${id}`)
+  async function handleEditDish(id) {
+    if (confirm("Are you sure you want to edit?"))
+    await api.update(`/drinks/${id}`)
   }
 
   const carousel = useRef(null)
@@ -190,7 +190,7 @@ export function HomeAdm() {
               {
                 foods.map(food => (
                   <div className="cardFood" key={String(food.id)} >
-                    <button className="button" onClick={() => handleDeleteDish(food.id)}>
+                    <button className="button" onClick={() => handleEditDish(food.id)}>
                       <TfiPencil />
                     </button>
                     <img src={`${api.defaults.baseURL}/files/${food.image}`} alt="dish image" />

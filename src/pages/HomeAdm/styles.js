@@ -366,7 +366,7 @@ export const Header = styled.header`
     display: flex;
     flex-direction: column;
     gap: 5px;
-    align-items: center;
+    align-items: start;
     justify-content: center;
    }
   @keyframes topdown {

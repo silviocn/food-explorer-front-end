@@ -318,12 +318,12 @@ export const Header = styled.header`
   white-space: nowrap;
   animation: topdown 1s;
   @media (max-width: 820px) { // Ipad Air
+    height: 120px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
     justify-content: center;
-    padding: 1px;
    }
   @keyframes topdown {
       0% {

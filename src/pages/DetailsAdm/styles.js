@@ -115,7 +115,6 @@ export const Main = styled.main`
   }
   img {
     border-radius: 50%;
-    display: none;
   }
   .image {
     width: 450px;

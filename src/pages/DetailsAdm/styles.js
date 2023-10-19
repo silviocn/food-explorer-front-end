@@ -49,13 +49,13 @@ export const Main = styled.main`
     }
   
   .textDetails {
-    width: 550px;
+    width: 750px;
   h1 {
     color: ${({ theme }) => theme.COLORS.WHITE_100};
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 140%;
     margin-bottom: 8px;
   }
@@ -63,7 +63,7 @@ export const Main = styled.main`
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 140%;
     margin-bottom: 32px;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
@@ -115,6 +115,7 @@ export const Main = styled.main`
   }
   img {
     border-radius: 50%;
+    display: none;
   }
   .image {
     width: 450px;

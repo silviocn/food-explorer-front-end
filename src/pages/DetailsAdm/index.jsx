@@ -84,7 +84,7 @@ export function DetailsAdm() {
             {
               ingredients.map(ingredient => (
                 <span key={String(ingredient.id)}>
-                  <Img imgName={ingredient.name} />
+                  
                   {ingredient.name}
                 </span>
               ))

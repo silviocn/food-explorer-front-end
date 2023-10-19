@@ -112,7 +112,7 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.WHITE_200};
       }
   }
-  .categorydish{
+  .category{
     display: flex;
     flex-direction: column;
     gap: 8px;

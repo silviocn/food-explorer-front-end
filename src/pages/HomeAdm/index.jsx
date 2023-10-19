@@ -222,9 +222,11 @@ export function HomeAdm() {
               {
                 foodsDesserts.map(food => (
                   <div className="cardFood" key={String(food.id)} >
-                    <button className="button" onClick={() => handleDeleteDessert(food.id)}>
-                      <TfiPencil />
-                    </button>
+                    <Link to={`detailsadmdesserts/${food.id}`}>
+                      <button className="button" /*onClick={() => handleDeleteDessert(food.id)}*/>
+                        <TfiPencil />
+                      </button>
+                    </Link>
                     <img src={`${api.defaults.baseURL}/files/${food.image}`} alt="dessert image" />
                     <Link to={`/detailsadmdesserts/${food.id}`}><a><h2>{food.name}<BiChevronRight /></h2></a></Link>
                     <p>{food.description}</p>
@@ -251,9 +253,11 @@ export function HomeAdm() {
               {
                 foodsDrinks.map(food => (
                   <div className="cardFood" key={String(food.id)} >
-                    <button className="button" onClick={() => handleDeleteDrink(food.id)}>
-                      <TfiPencil />
-                    </button>
+                    <Link to={`detailsadmdrinks/${food.id}`}>
+                      <button className="button" /*onClick={() => handleDeleteDrink(food.id)}*/>
+                        <TfiPencil />
+                      </button>
+                    </Link>
                     <img src={`${api.defaults.baseURL}/files/${food.image}`} alt="drink image" />
                     <Link to={`/detailsadmdrinks/${food.id}`}><a><h2>{food.name}<BiChevronRight /></h2></a></Link>
                     <p>{food.description}</p>

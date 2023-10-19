@@ -232,7 +232,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 357px;
+      width: 257px;
       height: 48px;
       background: ${({ theme }) => theme.COLORS.COLOR_BORDER_900}; 
       opacity: 0.8;
@@ -251,7 +251,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 357px;
+      width: 257px;
       height: 48px;
       background: ${({ theme }) => theme.COLORS.RED_300}; 
       opacity: 0.8;

@@ -381,7 +381,7 @@ export const Header = styled.header`
   }
   .gap {
     display: flex;
-    width: 740px;
+    width: 100%;
     align-items: center;
     gap: 16px;
     @media (max-width: 820px) { // Ipad Air

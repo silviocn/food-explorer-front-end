@@ -232,29 +232,9 @@ export const Container = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 257px;
+      width: 357px;
       height: 48px;
       background: ${({ theme }) => theme.COLORS.COLOR_BORDER_900}; 
-      opacity: 0.8;
-      border: 1px solid ${({ theme }) => theme.COLORS.WHITE_200};
-      border-radius: 5px;
-      margin-top: 24px;
-      margin-bottom: 24px;
-      margin-right: 24px;
-      gap: 10px;
-      font-family: 'Poppins';
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 24px;
-      color: ${({ theme }) => theme.COLORS.WHITE_300}; 
-  }
-  .saverequest{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 257px;
-      height: 48px;
-      background: ${({ theme }) => theme.COLORS.RED_300}; 
       opacity: 0.8;
       border: 1px solid ${({ theme }) => theme.COLORS.WHITE_200};
       border-radius: 5px;

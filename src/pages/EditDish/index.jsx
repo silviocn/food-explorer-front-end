@@ -73,7 +73,7 @@ export function EditDish() {
       <HeaderTwo />
       <main>
           <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
-        <h1>Edit dish</h1>
+        <h1>New dish</h1>
         <div className="imageAndNameDish">
           <div className="imagedish">
             <p>Dessert image</p>
@@ -114,10 +114,7 @@ export function EditDish() {
           <textarea placeholder="Briefly talk about the dish, ingredients and mixture." onChange={e => setDescription(e.target.value)} />
         </div>
         <div className="button">
-          <button className="addrequest" >
-            Delete
-          </button>
-          <button className="saverequest" onClick={(e) => handleNewDish(e)}>
+          <button className="addrequest" onClick={(e) => handleNewDish(e)}>
             Save
           </button>
         </div>

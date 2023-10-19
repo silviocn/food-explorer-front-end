@@ -156,9 +156,7 @@ export function HomeAdm() {
 
         <div className="buttons">
           <Link to="/editdish">
-            <ButtonTwo>
-              <TfiReceipt />New dish
-            </ButtonTwo>
+            <ButtonTwo>New dish</ButtonTwo>
           </Link>
           
           <Logout onClick={handleSignOut}>

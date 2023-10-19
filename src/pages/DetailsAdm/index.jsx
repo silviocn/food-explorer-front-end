@@ -60,13 +60,9 @@ export function DetailsAdm() {
           </div>
           
           <div className="finishBuy">
-            <span className="price">R$ {String(Number(data.price).toFixed(2)).replace(".", ",")}</span>
-            <button className="button" onClick={() => handleDeleteDish(data.id)}>
-              <GoTrashcan /> Delete
-            </button>
-            <button className='button' Onclick={() => handleEditDish(data.id)}>
-              <TfiPencil /> Edit Dish
-            </button>
+          <Link to="/editdish">
+            <ButtonTwo>Edit dish</ButtonTwo>
+          </Link>
           </div>
         </div>
       </Main>

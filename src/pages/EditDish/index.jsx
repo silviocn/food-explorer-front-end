@@ -83,12 +83,12 @@ export function EditDish() {
 
           <div className="namedish">
             <label htmlFor="namedish">Name</label>
-            <input type="text" id="namedish" placeholder="Example name" onChange={e => setName(e.target.value)} />
+            <input type="text" id="namedish" placeholder="Ex.: Cesar Salad" onChange={e => setName(e.target.value)} />
           </div>
 
           <div className="categorydish">
             <label htmlFor="categorydish">Category</label>
-            <Select options={options} type="text" id="categorydish" placeholder="Categories" />
+            <Select isSearchable={true} options={options} type="text" id="categorydish" placeholder="Categories" />
           </div>
         </div>
         <div className="ingredientsAndPriceDish">

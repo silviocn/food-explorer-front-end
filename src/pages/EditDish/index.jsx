@@ -114,11 +114,11 @@ export function EditDish() {
           <textarea placeholder="Briefly talk about the dish, ingredients and mixture." onChange={e => setDescription(e.target.value)} />
         </div>
         <div className="button">
-          <button className="addrequest" onClick={(e) => handleNewDish(e)}>
-            Save
-          </button>
           <button className="addrequest" >
             Delete
+          </button>
+          <button className="saverequest" onClick={(e) => handleNewDish(e)}>
+            Save
           </button>
         </div>
       </main>

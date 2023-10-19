@@ -2,8 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  margin-left: 0px;
-  margin-top: 20px;
+  margin-top: 16px;
+  margin-right: 18px;
+  margin-bottom: -25px;
+  place-self: end;
+  scale: 1.5;
   
   svg {
     color: ${({ theme }) => theme.COLORS.GRAY_400};

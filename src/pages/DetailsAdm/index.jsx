@@ -84,7 +84,6 @@ export function DetailsAdm() {
             {
               ingredients.map(ingredient => (
                 <span key={String(ingredient.id)}>
-                  
                   {ingredient.name}
                 </span>
               ))

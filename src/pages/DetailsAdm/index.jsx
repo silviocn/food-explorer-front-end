@@ -8,6 +8,8 @@ import { Navigate, useParams } from 'react-router-dom'
 import { Img } from '../../components/Img'
 // import { GoTrashcan } from 'react-icons/go'
 import { FiLogOut } from 'react-icons/fi'
+import { BsFillHexagonFill } from 'react-icons/bs'
+import { BiSearchAlt } from 'react-icons/bi'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
 

@@ -1,13 +1,13 @@
-import { Container, Main, ButtonText } from './styles'
-import { HeaderTwo } from '../../components/HeaderTwo'
+import { Container, Main, ButtonText, Logout, Header, Input } from './styles'
+// import { HeaderTwo } from '../../components/HeaderTwo'
 import { FooterTwo } from '../../components/FooterTwo'
 import { SlArrowLeft } from 'react-icons/sl'
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
 import { Navigate, useParams } from 'react-router-dom'
 import { Img } from '../../components/Img'
-import { GoTrashcan } from 'react-icons/go'
-import { TfiPencil } from 'react-icons/tfi'
+// import { GoTrashcan } from 'react-icons/go'
+import { FiLogOut } from 'react-icons/fi'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
 
@@ -39,7 +39,31 @@ export function DetailsAdm() {
 
   return (
     <Container>
-      <HeaderTwo />
+      <Header>
+        <div className="logo">
+          <BsFillHexagonFill />
+          <span>food explorer</span>
+          <h2>admin</h2>
+        </div>
+        
+        <div className="gap">
+          <Input >
+            <BiSearchAlt />
+            <input type="text" placeholder="Search by your meals" onChange={e => setSearch(e.target.value)} />
+          </Input>
+        </div>
+
+        <div className="buttons">
+          <Link to="/editdish">
+            <ButtonTwo>New dish</ButtonTwo>
+          </Link>
+          
+          <Logout onClick={handleSignOut}>
+            <FiLogOut />
+          </Logout>
+        </div>
+      </Header>
+
       <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
       <Main>
         <div >

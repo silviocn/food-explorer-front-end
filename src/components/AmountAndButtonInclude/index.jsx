@@ -3,7 +3,6 @@ import { RiSubtractFill } from 'react-icons/ri'
 import { RiAddLine } from 'react-icons/ri'
 import { useState } from "react"
 import { Button } from '../Button'
-import { TfiReceipt } from 'react-icons/tfi'
 import { api } from "../../services/api"
 
 export function AmountAndButtonInclude({ image, price, name }) {

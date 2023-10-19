@@ -32,9 +32,10 @@ export const ButtonText = styled(Link)`
 
 export const Main = styled.main`
   grid-area: content;
-  padding: 0 125px;
+  padding: 0 250px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 50px;
   animation: scale 1s;
 @keyframes scale {
@@ -47,14 +48,15 @@ export const Main = styled.main`
         transform: scale(1.0)
       }
     }
+  
   .textDetails {
-    width: 550px;
+    width: 750px;
   h1 {
     color: ${({ theme }) => theme.COLORS.WHITE_100};
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 50px;
     line-height: 140%;
     margin-bottom: 8px;
   }
@@ -62,7 +64,7 @@ export const Main = styled.main`
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 140%;
     margin-bottom: 32px;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
@@ -116,8 +118,8 @@ export const Main = styled.main`
     border-radius: 50%;
   }
   .image {
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
   }
   svg {
     color: ${({ theme }) => theme.COLORS.WHITE_200};
@@ -146,6 +148,30 @@ export const Main = styled.main`
       }
       .button:hover {
           transform: scale(1.2)
+      }
+
+      @media (max-width: 820px) { // Ipad Air
+        padding: 0 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .ingredients {
+          gap: 10px;
+          font-size: 12px;
+          line-height: 120%;
+          margin-bottom: 35px;
+          span {
+            gap: 5px;
+          }
+        }
+        p {
+          font-size: 24px;
+          line-height: 240%;
+          margin-bottom: 32px;
+          width: 70%;
+        }
       }
 `;
 

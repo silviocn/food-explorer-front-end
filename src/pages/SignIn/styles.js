@@ -30,6 +30,7 @@ export const Container = styled.div`
     scale: 2.8;
   }
     margin-left: 150px;
+    margin-right: 300px;
     display: flex;
     align-items: center;
     gap: 19px;
@@ -83,7 +84,7 @@ export const Container = styled.div`
       margin-bottom: 32px;
       text-align: center;
       font-family: 'Poppins';
-      font-weight: 500;
+      font-weight: 400;
       font-size: 32px;
       line-height: 24px;
       color: ${({ theme }) => theme.COLORS.WHITE_200};

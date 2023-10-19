@@ -39,6 +39,11 @@ export function DetailsAdm() {
     navigate(`/dishes/${id}`)
   }
 
+  function handleSignOut() {
+    navigate("/adm")
+    signOut()
+  }
+
   return (
     <Container>
       <Header>

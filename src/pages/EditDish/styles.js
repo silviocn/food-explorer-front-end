@@ -112,6 +112,13 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.WHITE_200};
       }
   }
+  .categorydish{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  
   .ingredientsAndPriceDish{
     margin-top: 24px;
     display: flex;

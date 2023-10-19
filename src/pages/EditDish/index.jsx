@@ -7,6 +7,7 @@ import { HeaderTwo } from '../../components/HeaderTwo'
 import { FooterTwo } from '../../components/FooterTwo'
 import { FiUpload } from 'react-icons/fi'
 import { IngredientItem } from '../../components/IngredientItem'
+import Select from 'react-select';
 
 export function EditDish() {
   const [name, setName] = useState("")
@@ -60,6 +61,13 @@ export function EditDish() {
     await api.post("/dishes", formData).then(() => { alert("Item successfully registered"); navigate("/adm") }).catch(error => { if (error.response) { alert(error.response.data.message) } else { alert("Unable to register") } })
 
   }
+
+  const options = [
+    { value: "Dish", label: "Dish" },
+    { value: "Beverages", label: "Beverages" },
+    { value: "Desserts", label: "Desserts"},
+  ];
+
   return (
     <Container>
       <HeaderTwo />
@@ -72,9 +80,15 @@ export function EditDish() {
             <label htmlFor="imagedish"><FiUpload />Upload image</label>
             <input type="file" id="imagedish" onChange={(event) => handleImage(event)} />
           </div>
+
           <div className="namedish">
             <label htmlFor="namedish">Name</label>
             <input type="text" id="namedish" placeholder="Example name" onChange={e => setName(e.target.value)} />
+          </div>
+
+          <div className="categorydish">
+            <label htmlFor="categorydish">Category</label>
+            <Select options={options} type="text" id="categorydish" placeholder="Categories" />
           </div>
         </div>
         <div className="ingredientsAndPriceDish">

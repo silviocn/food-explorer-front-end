@@ -7,14 +7,14 @@ import { api } from "../../services/api"
 
 export function AmountAndButtonInclude({ image, price, name}) {
   const [amount, setAmount] = useState(0)
-  let value = new(price)
+  const value = new(price)
 
   function handleAmountSum() {
     setAmount(prevState => Number(prevState) + 1)
   }
 
   function handleValueSum() {
-    setValue(prevState => Number(prevState) + value)
+    setValue(prevState => Number(prevState) + Number(value))
   }
 
   function handleAmountSub() {

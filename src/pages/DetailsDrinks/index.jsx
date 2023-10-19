@@ -44,7 +44,6 @@ export function DetailsDrinks() {
               {
                 ingredients.map(ingredient => (
                   <span key={String(ingredient.id)}>
-                    <Img imgName={ingredient.name} />
                     <p className={statePage ? "Light" : "Dark"}>{ingredient.name}</p>
                   </span>
                 ))

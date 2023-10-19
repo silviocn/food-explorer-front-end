@@ -1,13 +1,13 @@
-import { Container, Main, ButtonText } from './styles'
-import { HeaderTwo } from '../../components/HeaderTwo'
+import { Container, Main, ButtonText, Logout, Header, Input } from './styles'
 import { FooterTwo } from '../../components/FooterTwo'
 import { SlArrowLeft } from 'react-icons/sl'
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
 import { useParams } from 'react-router-dom'
-import { Img } from '../../components/Img'
-import { GoTrashcan } from 'react-icons/go'
-import { useNavigate } from 'react-router-dom'
+// import { Img } from '../../components/Img'
+// import { GoTrashcan } from 'react-icons/go'
+import { useNavigate, Link } from 'react-router-dom'
+import { ButtonTwo } from '../../components/ButtonTwo'
 
 export function DetailsAdmDrinks() {
   const [data, setData] = useState({})
@@ -49,7 +49,6 @@ export function DetailsAdmDrinks() {
             {
               ingredients.map(ingredient => (
                 <span key={String(ingredient.id)}>
-                  <Img imgName={ingredient.name} />
                   {ingredient.name}
                 </span>
               ))
@@ -57,10 +56,9 @@ export function DetailsAdmDrinks() {
           </div>
           
           <div className="finishBuy">
-            <span className="price">R$ {String(Number(data.price).toFixed(2)).replace(".", ",")}</span>
-            <button className="button" onClick={() => handleDeleteDrink(data.id)}>
-              <GoTrashcan /> Delete
-            </button>
+            <Link to="/editdish">
+              <ButtonTwo>Edit dish</ButtonTwo>
+            </Link>
           </div>
         </div>
       </Main>

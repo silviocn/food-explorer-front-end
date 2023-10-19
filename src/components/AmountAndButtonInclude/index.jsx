@@ -31,8 +31,7 @@ export function AmountAndButtonInclude({ image, price, name }) {
     <Container>
       <span className="amount"><a><RiSubtractFill onClick={handleAmountSub} /></a> {amount} <a><RiAddLine onClick={handleAmountSum} /></a></span>
       <Button onClick={handleNewRequest}>
-        <TfiReceipt />
-        include
+        Include
       </Button>
     </Container>
   )

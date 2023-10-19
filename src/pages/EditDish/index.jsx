@@ -88,9 +88,7 @@ export function EditDish() {
 
           <div className="categorydish">
             <label htmlFor="categorydish">Category</label>
-            <input id='select'>
               <Select isSearchable={true} options={options} type="text" id="categorydish" placeholder="Categories" />
-            </input>
           </div>
         </div>
         <div className="ingredientsAndPriceDish">

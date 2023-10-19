@@ -118,9 +118,6 @@ export const Container = styled.div`
     gap: 8px;
     width: 100%;
     background: transparent;
-    input {
-      background: transparent;
-    }
   }
 
   .ingredientsAndPriceDish{

@@ -10,6 +10,6 @@ export const Container = styled.div`
   line-height: 160%;
   color: ${({ theme }) => theme.COLORS.WHITE_100};
   .amount {
-    margin-right: 15px;
+    margin-right: 25px;
   }
 `;

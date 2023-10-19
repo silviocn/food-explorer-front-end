@@ -14,7 +14,7 @@ export const Container = styled.button`
   height: 56px;
   border: 0;
   font-size: 14px;
-  padding: 0 5px;  
+  padding: 0 15px;  
   border-radius: 5px;
   font-weight: 500;
   font-family: 'Poppins';
@@ -37,7 +37,7 @@ export const Container = styled.button`
   height: 56px;
   border: 0;
   font-size: 14px;
-  padding: 0 5px;  
+  padding: 0 15px;  
   border-radius: 5px;
   font-weight: 500;
   font-family: 'Poppins';

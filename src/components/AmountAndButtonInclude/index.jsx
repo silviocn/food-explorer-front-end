@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Button } from '../Button'
 import { api } from "../../services/api"
 
-export function AmountAndButtonInclude({ image, price, name, value }) {
+export function AmountAndButtonInclude({ image, price, name}) {
   const [amount, setAmount] = useState(0)
   let value = new(price)
 

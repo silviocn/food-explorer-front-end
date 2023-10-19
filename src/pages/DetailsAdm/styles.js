@@ -167,6 +167,12 @@ export const Main = styled.main`
             gap: 5px;
           }
         }
+        p {
+          font-size: 24px;
+          line-height: 240%;
+          margin-bottom: 32px;
+          width: 70%;
+        }
       }
 `;
 

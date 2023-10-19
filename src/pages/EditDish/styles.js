@@ -117,15 +117,7 @@ export const Container = styled.div`
     flex-direction: column;
     gap: 8px;
     width: 100%;
-    border: 1px solid ${({ theme }) => theme.COLORS.GRAY_300};
     background: transparent;
-    label {
-        font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 100%;
-        color:  ${({ theme }) => theme.COLORS.GRAY_300};
-      }
   }
 
   .ingredientsAndPriceDish{

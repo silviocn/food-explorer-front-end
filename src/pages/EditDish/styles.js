@@ -240,12 +240,13 @@ export const Container = styled.div`
       border-radius: 5px;
       margin-top: 24px;
       margin-bottom: 24px;
+      margin-right: 24px;
       gap: 10px;
       font-family: 'Poppins';
       font-weight: 500;
       font-size: 14px;
       line-height: 24px;
-      color: ${({ theme }) => theme.COLORS.WHITE_200}; 
+      color: ${({ theme }) => theme.COLORS.WHITE_300}; 
   }
   .saverequest{
       display: flex;

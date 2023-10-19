@@ -263,3 +263,17 @@ export const Input = styled.div`
     height: 19.5px;
   }
 `;
+
+export const Logout = styled.button`
+  border: none;
+  background: none;
+  padding-left: 37px;
+  svg {
+    color: ${({ theme }) => theme.COLORS.WHITE_200};
+    width: 22px;
+    height: 22px;
+  }
+  @media (max-width: 820px) { // Ipad Air
+    padding: 0px;
+  }
+`;

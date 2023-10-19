@@ -35,6 +35,11 @@ export function DetailsAdmDesserts() {
     navigate(-1)
     }
   }
+  
+  function handleSignOut() {
+    navigate("/adm")
+    signOut()
+  }
 
   return (
     <Container>

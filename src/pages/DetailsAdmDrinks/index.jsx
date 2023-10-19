@@ -36,6 +36,11 @@ export function DetailsAdmDrinks() {
     }
   }
 
+  function handleSignOut() {
+    navigate("/adm")
+    signOut()
+  }
+
   return (
     <Container>
       <Header>

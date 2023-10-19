@@ -9,6 +9,8 @@ import { Navigate, useParams } from 'react-router-dom'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
 import { BsFillHexagonFill } from 'react-icons/bs'
+import { BiSearchAlt } from 'react-icons/bi'
+import { FiLogOut } from 'react-icons/fi'
 
 export function DetailsAdmDesserts() {
   const [data, setData] = useState({})

@@ -8,7 +8,8 @@ import { Navigate, useParams } from 'react-router-dom'
 import { Img } from '../../components/Img'
 import { GoTrashcan } from 'react-icons/go'
 import { TfiPencil } from 'react-icons/tfi'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
+import { ButtonTwo } from '../../components/ButtonTwo'
 
 export function DetailsAdm() {
   const [data, setData] = useState({})

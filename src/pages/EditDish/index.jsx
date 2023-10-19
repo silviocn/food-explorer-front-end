@@ -91,7 +91,7 @@ export function EditDish() {
               <Select isSearchable={true} options={options} type="text" id="category" placeholder="Categories" />
           </div>
         </div>
-        
+
         <div className="ingredientsAndPriceDish">
           <div className="ingredients">
             <p>Ingredients</p>
@@ -115,7 +115,10 @@ export function EditDish() {
         </div>
         <div className="button">
           <button className="addrequest" onClick={(e) => handleNewDish(e)}>
-            Add order
+            Save
+          </button>
+          <button className="addrequest" >
+            Delete
           </button>
         </div>
       </main>

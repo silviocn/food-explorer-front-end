@@ -191,8 +191,8 @@ export function HomeAdm() {
               {
                 foods.map(food => (
                   <div className="cardFood" key={String(food.id)} >
-                    <Link to={`/details/${food.id}`}>
-                      <button className="button" onClick={() => handleEditDish(food.id)}>
+                    <Link to={`/detailsadm/${food.id}`}>
+                      <button className="button" /*onClick={() => handleEditDish(food.id)}*/>
                         <TfiPencil />
                       </button>
                     </Link>

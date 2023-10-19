@@ -50,34 +50,34 @@ export const Main = styled.main`
     }
   
   .textDetails {
-    width: 750px;
-  h1 {
-    color: ${({ theme }) => theme.COLORS.WHITE_100};
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 140%;
-    margin-bottom: 8px;
+      width: 750px;
+    h1 {
+      color: ${({ theme }) => theme.COLORS.WHITE_100};
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 140%;
+      margin-bottom: 24px;
+    }
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 140%;
+      margin-bottom: 24px;
+      color: ${({ theme }) => theme.COLORS.WHITE_100};
+    }
   }
-  p {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 140%;
-    margin-bottom: 32px;
-    color: ${({ theme }) => theme.COLORS.WHITE_100};
-  }
-}
   .ingredients {
     display: flex;
     align-items: end;
     gap: 16px;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 100;
+    font-size: 15px;
     line-height: 140%;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
     margin-bottom: 45px;
@@ -118,8 +118,8 @@ export const Main = styled.main`
     border-radius: 50%;
   }
   .image {
-    width: 320px;
-    height: 320px;
+    width: 310px;
+    height: 310px;
   }
   svg {
     color: ${({ theme }) => theme.COLORS.WHITE_200};

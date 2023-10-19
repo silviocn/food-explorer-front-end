@@ -5,12 +5,18 @@ import { useState } from "react"
 import { Button } from '../Button'
 import { api } from "../../services/api"
 
-export function AmountAndButtonInclude({ image, price, name }) {
+export function AmountAndButtonInclude({ image, price, name, value }) {
   const [amount, setAmount] = useState(0)
+  let value = new(price)
 
   function handleAmountSum() {
     setAmount(prevState => Number(prevState) + 1)
   }
+
+  function handleValueSum() {
+    setValue(prevState => Number(prevState) + value)
+  }
+
   function handleAmountSub() {
     if (amount == 0) {
       return
@@ -18,6 +24,7 @@ export function AmountAndButtonInclude({ image, price, name }) {
       setAmount(prevState => Number(prevState) - 1)
     }
   }
+
   async function handleNewRequest() {
     if (amount === 0) {
       alert("Click on plus sign (+) to add quantity!")
@@ -29,7 +36,7 @@ export function AmountAndButtonInclude({ image, price, name }) {
   return (
     <Container>
       <span className="amount"><a><RiSubtractFill onClick={handleAmountSub} /></a> {amount} <a><RiAddLine onClick={handleAmountSum} /></a></span>
-      <Button onClick={handleNewRequest}>
+      <Button onClick={handleNewRequest} show={handleValueSum}>
         Include
       </Button>
     </Container>

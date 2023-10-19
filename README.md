@@ -20,5 +20,3 @@ Example of data: {
 }
 
 Or just use administrador@email.com and password 123456 to log in as administrator
-
-obs.: the PiPencilSimpleBold from react-icons didn't work, I spent many hours trying to fix it but couldn't resolve the issue

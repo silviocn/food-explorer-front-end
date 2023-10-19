@@ -21,7 +21,7 @@ export const ContainerTwo = styled.div`
   display: grid;
   overflow: hidden;
   grid-template-rows: 104px auto 77px;
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
     grid-template-rows: 150px auto 77px;
   }
   grid-template-areas: "header" "content" "footer";
@@ -52,7 +52,7 @@ export const ContainerTwo = styled.div`
   }
   .columns {
     display: flex;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     flex-direction: column;
     gap: 30px;
 }
@@ -72,7 +72,7 @@ export const ContainerTwo = styled.div`
   display: flex;
   flex-direction: column;
   overflow: auto;
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   height: 100%;
   min-width: 600px;
   flex-direction: column;
@@ -81,7 +81,7 @@ export const ContainerTwo = styled.div`
 }
 
 .columnTwo:last-child {
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   margin-bottom: 50px;
 }
 }

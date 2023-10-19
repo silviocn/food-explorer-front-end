@@ -3,20 +3,20 @@ import styled from 'styled-components'
 export const Container = styled.header`
  .favoritesDark{
   color: ${({ theme }) => theme.COLORS.WHITE_200};
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   margin-left: 65px;
   margin-top: 0px;
  }
  }
  .favoritesLight{
   color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   margin-left: 65px;
   margin-top: 0px;
  }
  }
  .dark {
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   padding: 0px;
   height: 150px;
   width: 600px;
@@ -40,7 +40,7 @@ export const Container = styled.header`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
  }
  .light {
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   padding: 0px;
   height: 150px;
   width: 600px;
@@ -85,7 +85,7 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.BLUE_100};
       min-width: 29.2px;
       min-height: 29.2px;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
         position: absolute;
         left: 10px;
         top: 10px;
@@ -95,7 +95,7 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
       min-width: 29.2px;
       min-height: 29.2px;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
         position: absolute;
         left: 10px;
         top: 10px;
@@ -106,7 +106,7 @@ export const Container = styled.header`
       color: ${({theme}) => theme.COLORS.WHITE_200};
       font-weight: bold;
       font-size: 25px;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
         font-size: 0px;
       }
     }
@@ -115,7 +115,7 @@ export const Container = styled.header`
       color: ${({theme}) => theme.COLORS.BACKGROUND_800};
       font-weight: bold;
       font-size: 25px;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
         font-size: 0px;
       }
     }
@@ -163,7 +163,7 @@ export const Container = styled.header`
     text-align: center;
     border-radius: 0px 0 8px 8px;
     animation: leftAlert 1s;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
         display: none;
       }
   }

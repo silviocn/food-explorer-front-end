@@ -21,7 +21,7 @@ export const ContainerTwo = styled.div`
   height: 100vh;
   display: grid;
   grid-template-rows: 104px auto 77px;
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
     grid-template-rows: 150px auto 77px;
   }
   overflow: hidden;
@@ -55,7 +55,7 @@ export const ContainerTwo = styled.div`
     width: 100%;
     overflow-y: auto;
     padding: 0 125px;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     height: 100%;
     min-width: 600px;
     padding: 0;
@@ -92,8 +92,8 @@ export const ContainerTwo = styled.div`
     margin-bottom: 80px;
     animation: scale 1s;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
-    @media (max-width: 600px) {
-    max-width: 600px;
+    @media (max-width: 820px) {
+    max-width: 820px;
   }
 }
   .tableLight{
@@ -108,8 +108,8 @@ export const ContainerTwo = styled.div`
     border-bottom: none;
     margin-bottom: 80px;
     animation: scale 1s;
-    @media (max-width: 600px) {
-    max-width: 600px;
+    @media (max-width: 820px) {
+    max-width: 820px;
   }
 }
     @keyframes scale {
@@ -125,7 +125,7 @@ export const ContainerTwo = styled.div`
   thead tr th:first-child {
     border-radius: 10px 0 0 0;
     padding: 20px;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     padding: 0;
   }
   }
@@ -141,7 +141,7 @@ export const ContainerTwo = styled.div`
     font-weight: 700;
     font-size: 14px;
     line-height: 160%;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     padding:  20px 5px;
     font-size: 12px;
   }
@@ -158,14 +158,14 @@ export const ContainerTwo = styled.div`
     font-weight: 700;
     font-size: 14px;
     line-height: 160%;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     padding:  20px 5px;
     font-size: 12px;
   }
     }
     tbody tr td:first-child {
       white-space: nowrap;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
         white-space: normal;
   }
     }
@@ -195,7 +195,7 @@ export const ContainerTwo = styled.div`
     line-height: 160%;
     color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   }
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
         font-size: 12px;
         padding: 5px;
   }
@@ -241,7 +241,7 @@ export const ButtonText = styled(Link)`
   font-size: 24px;
   line-height: 140%;
   color: ${({ theme }) => theme.COLORS.WHITE_200};
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
     margin-left: 0;
   }
   .svgDark {

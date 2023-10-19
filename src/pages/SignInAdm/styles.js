@@ -14,8 +14,8 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 600px) {
-    min-width: 600px;
+  @media (max-width: 820px) {
+    min-width: 820px;
   }
 }
   
@@ -47,7 +47,7 @@ export const Container = styled.div`
     line-height: 50px;
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       margin-left: 0;
   }
     .svgDark {

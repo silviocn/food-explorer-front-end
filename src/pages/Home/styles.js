@@ -57,7 +57,7 @@ export const Main = styled.main`
     grid-area: content;
     overflow: auto;
    
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     margin-bottom: 40px;
     height: 100%;
     width: 600px;
@@ -84,7 +84,7 @@ export const Main = styled.main`
     text-align: center;
     border-radius: 0px 0 8px 8px;
     animation: leftAlert 1s;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
         display: none;
       }
   }
@@ -107,7 +107,7 @@ export const Main = styled.main`
     display: none;
   }
   .textDark{
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       padding: 48px 0px 40px;
   }
     padding: 48px 125px 40px;
@@ -119,7 +119,7 @@ export const Main = styled.main`
     animation: left 1s;
   }
   .textLight{
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       padding: 48px 0px 40px;
   }
     padding: 48px 125px 40px;
@@ -141,7 +141,7 @@ export const Main = styled.main`
       }
     }
   .logoHomeDark {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       width: 600px;
       margin: 100px 0 0 0;
       height: 150px;
@@ -154,7 +154,7 @@ export const Main = styled.main`
     display: flex;
     animation: topdown 1s;
     img {
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
       width: 200px;
       height: 150px;
       margin-top: 0px;
@@ -164,7 +164,7 @@ export const Main = styled.main`
     }
   }
   .logoHomeLight {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       width: 600px;
       margin: 100px 0 0 0;
       height: 150px;
@@ -177,7 +177,7 @@ export const Main = styled.main`
     display: flex;
     animation: topdown 1s;
     img {
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
       width: 200px;
       height: 150px;
       margin-top: 0px;
@@ -198,7 +198,7 @@ export const Main = styled.main`
       }
     }
   .logoTextDark{
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     margin-left: -650px;
   }
     margin-left: -500px;
@@ -209,7 +209,7 @@ export const Main = styled.main`
     justify-content: center;
     white-space: nowrap;
   h1 {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       font-size: 20px;
   }
       margin-left: 600px;
@@ -226,13 +226,13 @@ export const Main = styled.main`
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
     font-size: 14px;
   }
     }
   }
   .logoTextLight{
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     margin-left: -650px;
   }
     margin-left: -500px;
@@ -243,7 +243,7 @@ export const Main = styled.main`
     justify-content: center;
     white-space: nowrap;
   h1 {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       font-size: 20px;
   }
       margin-left: 600px;
@@ -260,7 +260,7 @@ export const Main = styled.main`
       font-weight: 500;
       font-size: 16px;
       line-height: 140%;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
     font-size: 14px;
   }
     }
@@ -273,7 +273,7 @@ export const Main = styled.main`
     height: 512px;
     animation: scale 1s;
     z-index: 2;
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       margin: 0;
       width: 600px;
     }

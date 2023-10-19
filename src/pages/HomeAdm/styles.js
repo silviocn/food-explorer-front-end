@@ -62,7 +62,7 @@ export const Container = styled.div`
     }
   }
   .logoHomeDark {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       width: 600px;
       margin: 100px 0 0 0;
       height: 150px;
@@ -75,7 +75,7 @@ export const Container = styled.div`
     display: flex;
     animation: topdown 1s;
     img {
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
       width: 200px;
       height: 150px;
       margin-top: 0px;
@@ -85,7 +85,7 @@ export const Container = styled.div`
     }
   }
   .logoHomeLight {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       width: 600px;
       margin: 100px 0 0 0;
       height: 150px;
@@ -98,7 +98,7 @@ export const Container = styled.div`
     display: flex;
     animation: topdown 1s;
     img {
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
       width: 200px;
       height: 150px;
       margin-top: 0px;
@@ -119,7 +119,7 @@ export const Container = styled.div`
       }
     }
   .logoTextDark{
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     margin-left: -650px;
   }
     margin-left: -500px;
@@ -130,7 +130,7 @@ export const Container = styled.div`
     justify-content: center;
     white-space: nowrap;
   h1 {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       font-size: 20px;
   }
       margin-left: 600px;
@@ -147,13 +147,13 @@ export const Container = styled.div`
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
     font-size: 14px;
   }
     }
   }
   .logoTextLight{
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     margin-left: -650px;
   }
     margin-left: -500px;
@@ -164,7 +164,7 @@ export const Container = styled.div`
     justify-content: center;
     white-space: nowrap;
   h1 {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       font-size: 20px;
   }
       margin-left: 600px;
@@ -181,7 +181,7 @@ export const Container = styled.div`
       font-weight: 500;
       font-size: 16px;
       line-height: 140%;
-      @media (max-width: 600px) {
+      @media (max-width: 820px) {
     font-size: 14px;
   }
     }

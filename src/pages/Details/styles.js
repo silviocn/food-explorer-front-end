@@ -22,7 +22,7 @@ export const ContainerTwo = styled.div`
   display: grid;
   overflow: hidden;
   grid-template-rows: 104px auto 77px;
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
     grid-template-rows: 150px auto 77px;
   }
   grid-template-areas: "header" "content" "footer";
@@ -93,7 +93,7 @@ export const Main = styled.main`
   animation: scale 1s;
   overflow-y: scroll;
   height: 100%;
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   padding: 0px;
   width: 600px;
   gap: 10px;
@@ -101,7 +101,7 @@ export const Main = styled.main`
  .details {
   display: flex;
   gap: 30px;
-  @media (max-width: 600px) {
+  @media (max-width: 820px) {
   flex-direction: column;
  }
  }
@@ -116,7 +116,7 @@ export const Main = styled.main`
       }
     }
   .textDetails {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
   margin-bottom: 50px;
  }
     width: 550px;

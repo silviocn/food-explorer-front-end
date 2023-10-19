@@ -16,25 +16,25 @@ export const Container = styled.footer`
   justify-content: space-between;
   animation: downtop 1s;
   }
-  .light {
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  background-color: ${({ theme }) => theme.COLORS.WHITE_200};
-  grid-area: footer;
-  width: 100%;
-  height: 77px;
-  padding: 0 125px;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  animation: downtop 1s;
-  @media (max-width: 600px) {
-    padding: 0px;
-  }
-  }
   
+  .light {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background-color: ${({ theme }) => theme.COLORS.WHITE_200};
+    grid-area: footer;
+    width: 100%;
+    height: 77px;
+    padding: 0 125px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: downtop 1s;
+    @media (max-width: 820px) {
+      padding: 0px;
+    }
+  }
   
   .logo {
     display: flex;
@@ -68,6 +68,7 @@ export const Container = styled.footer`
       height: 29.2px;
     }
   }
+
   .darkSpan {
     font-family: 'DM Sans';
     color: ${({ theme }) => theme.COLORS.WHITE_300};
@@ -76,6 +77,7 @@ export const Container = styled.footer`
     font-size: 14px;
     line-height: 18px;
   }
+
   .lightSpan{
     font-family: 'DM Sans';
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
@@ -84,6 +86,7 @@ export const Container = styled.footer`
     font-size: 14px;
     line-height: 18px;
   }
+
   @keyframes downtop {
       0% {
         opacity: 0;

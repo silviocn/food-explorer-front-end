@@ -7,14 +7,9 @@ import { api } from "../../services/api"
 
 export function AmountAndButtonInclude({ image, price, name}) {
   const [amount, setAmount] = useState(0)
-  const value = new(price)
 
   function handleAmountSum() {
     setAmount(prevState => Number(prevState) + 1)
-  }
-
-  function handleValueSum() {
-    setValue(prevState => Number(prevState) + Number(value))
   }
 
   function handleAmountSub() {
@@ -36,7 +31,7 @@ export function AmountAndButtonInclude({ image, price, name}) {
   return (
     <Container>
       <span className="amount"><a><RiSubtractFill onClick={handleAmountSub} /></a> {amount} <a><RiAddLine onClick={handleAmountSum} /></a></span>
-      <Button onClick={handleNewRequest} show={handleValueSum}>
+      <Button onClick={handleNewRequest}>
         Include
       </Button>
     </Container>

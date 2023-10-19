@@ -8,6 +8,7 @@ import { Navigate, useParams } from 'react-router-dom'
 // import { GoTrashcan } from 'react-icons/go'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
+import { BsFillHexagonFill } from 'react-icons/bs'
 
 export function DetailsAdmDesserts() {
   const [data, setData] = useState({})

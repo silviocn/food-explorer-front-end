@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom'
 // import { GoTrashcan } from 'react-icons/go'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
+import { BsFillHexagonFill } from 'react-icons/bs'
 
 export function DetailsAdmDrinks() {
   const [data, setData] = useState({})
@@ -59,7 +60,7 @@ export function DetailsAdmDrinks() {
           </Logout>
         </div>
       </Header>
-      
+
       <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
       <Main>
         <div >

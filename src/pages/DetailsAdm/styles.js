@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: 104px 50px auto 77px;
   grid-template-areas: "header" "back" "content" "footer";
+
 `;
 
 export const ButtonText = styled(Link)`
@@ -148,6 +149,24 @@ export const Main = styled.main`
       }
       .button:hover {
           transform: scale(1.2)
+      }
+
+      @media (max-width: 820px) { // Ipad Air
+        padding: 0 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .ingredients {
+          gap: 10px;
+          font-size: 12px;
+          line-height: 120%;
+          margin-bottom: 35px;
+          span {
+            gap: 5px;
+          }
+        }
       }
 `;
 

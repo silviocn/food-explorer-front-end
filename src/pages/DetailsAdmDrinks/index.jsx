@@ -35,7 +35,31 @@ export function DetailsAdmDrinks() {
 
   return (
     <Container>
-      <HeaderTwo />
+      <Header>
+        <div className="logo">
+          <BsFillHexagonFill />
+          <span>food explorer</span>
+          <h2>admin</h2>
+        </div>
+        
+        <div className="gap">
+          <Input >
+            <BiSearchAlt />
+            <input type="text" placeholder="Search by your meals" onChange={e => setSearch(e.target.value)} />
+          </Input>
+        </div>
+
+        <div className="buttons">
+          <Link to="/editdish">
+            <ButtonTwo>New dish</ButtonTwo>
+          </Link>
+          
+          <Logout onClick={handleSignOut}>
+            <FiLogOut />
+          </Logout>
+        </div>
+      </Header>
+      
       <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
       <Main>
         <div >

@@ -14,10 +14,6 @@ export const ContainerOne = styled.div`
     background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     
   }
-`
-export const Header = styled.div`
-  width: 100%;
-  padding: 2px 10px;
 `;
 
 export const ContainerTwo = styled.div`

@@ -1,4 +1,4 @@
-import { ContainerOne, ContainerTwo, Main, ButtonText, Header } from './styles'
+import { ContainerOne, ContainerTwo, Main, ButtonText } from './styles'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { SlArrowLeft } from 'react-icons/sl'
@@ -6,7 +6,6 @@ import { useState, useEffect } from "react"
 import { api } from "../../services/api"
 import { useParams } from 'react-router-dom'
 import { AmountAndButtonInclude } from '../../components/AmountAndButtonInclude'
-import { Img } from '../../components/Img'
 import { useStatePage } from '../../hooks/statePage'
 
 export function Details() {

@@ -33,7 +33,7 @@ export const ButtonText = styled(Link)`
 
 export const Main = styled.main`
   grid-area: content;
-  padding: 0 250px;
+  padding: 0 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +81,7 @@ export const Main = styled.main`
     font-size: 15px;
     line-height: 140%;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
-    //margin-bottom: 45px;
+    margin-bottom: 45px;
     span {
       display: flex;
       flex-direction: column;

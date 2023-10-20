@@ -77,7 +77,7 @@ export const Container = styled.div`
     img {
       @media (max-width: 820px) {
         width: 200px;
-        height: 150px;
+        height: 179px;
         margin-top: -30px;
         margin-left: -40px;
       }
@@ -101,7 +101,7 @@ export const Container = styled.div`
     img {
       @media (max-width: 820px) {
       width: 200px;
-      height: 150px;
+      height: 179px;
       margin-top: -30px;
       margin-left: -40px;
     }

@@ -241,6 +241,9 @@ export const Header = styled.header`
     gap: 5px;
     align-items: start;
     justify-content: center;
+    .buttons {
+      display: none;
+    }
    }
   @keyframes topdown {
       0% {

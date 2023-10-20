@@ -6,6 +6,7 @@ export const Container = styled.header`
   @media (max-width: 820px) {
   margin-left: 65px;
   margin-top: 0px;
+  z-index: -1;
  }
  }
  .favoritesLight{
@@ -13,6 +14,7 @@ export const Container = styled.header`
   @media (max-width: 820px) {
   margin-left: 65px;
   margin-top: 0px;
+  z-index: -1;
  }
  }
  .dark {

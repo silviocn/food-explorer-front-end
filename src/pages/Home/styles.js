@@ -21,7 +21,7 @@ export const ContainerTwo = styled.div`
   height: 100vh;
   display: grid;
   grid-template-rows: 104px auto 77px;
-  @media (max-width: 400px) {
+  @media (max-width: 820px) {
     grid-template-rows: 150px auto 77px;
   }
   grid-template-areas: "header" "content" "footer";
@@ -59,8 +59,9 @@ export const Main = styled.main`
    
     @media (max-width: 820px) {
     margin-bottom: 40px;
+    margin-left: 20px;
     height: 100%;
-    width: 600px;
+    //width: 600px;
     overflow-x: hidden;
   }
   .searchAlert {

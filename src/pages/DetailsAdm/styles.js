@@ -55,7 +55,7 @@ export const ContainerTwo = styled.div`
 
 export const ButtonText = styled(Link)`
   margin-left: 125px;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100px;
   grid-area: back;  
   display: flex;

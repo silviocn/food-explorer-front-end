@@ -76,7 +76,7 @@ export function DetailsAdm() {
 
       <Main className={statePage ? "light" : "dark"}>
           <div className="back">
-            <ButtonText to="/"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>
+            <ButtonText to="/adm"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>
           </div>
           <div className="details">
             <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="dish image" />

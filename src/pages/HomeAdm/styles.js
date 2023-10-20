@@ -76,11 +76,11 @@ export const Container = styled.div`
     animation: topdown 1s;
     img {
       @media (max-width: 820px) {
-      width: 200px;
-      height: 150px;
-      margin-top: -30px;
-      margin-left: -20px;
-  }
+        width: 200px;
+        height: 150px;
+        margin-top: -30px;
+        margin-left: -40px;
+      }
       margin-top: -50px;
       margin-left: -40px;
     }
@@ -90,7 +90,7 @@ export const Container = styled.div`
       width: 600px;
       margin: 100px 0 0 0;
       height: 150px;
-  }
+    }
     margin: 0 auto;
     margin-top: 80px;
     background: ${({ theme }) => theme.COLORS.BACKGROUND_1200};
@@ -103,7 +103,7 @@ export const Container = styled.div`
       width: 200px;
       height: 150px;
       margin-top: -30px;
-      margin-left: -20px;
+      margin-left: -40px;
     }
       margin-top: -50px;
       margin-left: -40px;
@@ -134,6 +134,7 @@ export const Container = styled.div`
   h1 {
     @media (max-width: 820px) {
       font-size: 20px;
+      margin-left: 500px
   }
       margin-left: 600px;
       font-family: 'Poppins';
@@ -151,6 +152,7 @@ export const Container = styled.div`
       line-height: 140%;
       @media (max-width: 820px) {
         font-size: 12px;
+        margin-left: 500px
       }
     }
   }
@@ -168,6 +170,7 @@ export const Container = styled.div`
   h1 {
     @media (max-width: 820px) {
       font-size: 20px;
+      margin-left: 500px
   }
       margin-left: 600px;
       font-family: 'Poppins';
@@ -184,8 +187,9 @@ export const Container = styled.div`
       font-size: 16px;
       line-height: 140%;
       @media (max-width: 820px) {
-    font-size: 12px;
-  }
+        font-size: 12px;
+        margin-left: 500px
+      }
     }
   }
 

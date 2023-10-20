@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 `;
 
-export const ButtonText = styled(Link)`
+/*export const ButtonText = styled(Link)`
   margin-left: 125px;
   margin-top: 50px;
   width: 100px;
@@ -29,7 +29,7 @@ export const ButtonText = styled(Link)`
     height: 22px;
     color: ${({ theme }) => theme.COLORS.WHITE_200};
   }
-`;
+`;*/
 
 export const Main = styled.main`
   grid-area: content;

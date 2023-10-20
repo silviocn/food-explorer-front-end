@@ -88,7 +88,7 @@ export function EditDish() {
 
           <div className="category">
             <label htmlFor="category">Category</label>
-              <Select isSearchable={true} options={options} type="text" id="category" placeholder="Categories" />
+              <Select options={options} type="text" id="category" placeholder="Categories" />
           </div>
         </div>
 

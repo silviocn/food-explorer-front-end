@@ -213,7 +213,8 @@ export const Header = styled.header`
     display: flex;
     width: 740px;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
+    padding: 12px 14px;
     @media (max-width: 820px) { // Ipad Air
       flex-direction: column;
       width: 30%;
@@ -224,7 +225,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     gap: 11px;
-    padding-right: 37px;
+    //padding-right: 37px;
     svg {
       color: ${({ theme }) => theme.COLORS.BLUE_100};
       width: 29.2px;

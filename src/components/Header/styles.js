@@ -85,7 +85,7 @@ export const Container = styled.header`
       color: ${({ theme }) => theme.COLORS.BLUE_100};
       min-width: 29.2px;
       min-height: 29.2px;
-      @media (max-width: 820px) {
+      @media (max-width: 600px) {
         position: absolute;
         left: 10px;
         top: 10px;
@@ -106,7 +106,7 @@ export const Container = styled.header`
       color: ${({theme}) => theme.COLORS.WHITE_200};
       font-weight: bold;
       font-size: 25px;
-      @media (max-width: 820px) {
+      @media (max-width: 600px) {
         font-size: 0px;
       }
     }

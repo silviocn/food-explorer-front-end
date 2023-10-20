@@ -111,7 +111,6 @@ export const Main = styled.main`
     @media (max-width: 820px) {
     margin-bottom: 50px;
     width: 400px;
-    margin-lef: 20px;
  }
     width: 550px;
   .h1Dark {

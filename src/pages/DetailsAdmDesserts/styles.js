@@ -84,11 +84,11 @@ export const Main = styled.main`
   overflow-y: scroll;
   height: 100%;
   @media (max-width: 820px) {
-  padding: 0px;
-  width: 600px;
-  gap: 20px;
-  margin-left: 20px;
- }
+    padding: 0px;
+    width: 600px;
+    gap: 20px;
+    margin-left: 20px;
+  }
  .details {
   display: flex;
   gap: 30px;
@@ -109,7 +109,8 @@ export const Main = styled.main`
     }
   .textDetails {
     @media (max-width: 820px) {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
+    width: 400px;
  }
     width: 550px;
   .h1Dark {
@@ -241,6 +242,9 @@ export const Header = styled.header`
     gap: 5px;
     align-items: start;
     justify-content: center;
+    .buttons {
+      display: none;
+    }
    }
   @keyframes topdown {
       0% {

@@ -59,7 +59,7 @@ export const Main = styled.main`
       font-weight: 500;
       font-size: 40px;
       line-height: 140%;
-      margin-bottom: 24px;
+      margin-bottom: 8px;
     }
     p {
       font-family: 'Poppins';
@@ -81,7 +81,7 @@ export const Main = styled.main`
     font-size: 15px;
     line-height: 140%;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
-    margin-bottom: 45px;
+    //margin-bottom: 45px;
     span {
       display: flex;
       flex-direction: column;

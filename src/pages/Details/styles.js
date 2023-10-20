@@ -141,7 +141,7 @@ export const Main = styled.main`
   .pDark {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     line-height: 140%;
     margin-bottom: 32px;
@@ -150,7 +150,7 @@ export const Main = styled.main`
   .pLight {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 24px;
     line-height: 140%;
     margin-bottom: 32px;
@@ -163,8 +163,8 @@ export const Main = styled.main`
     gap: 16px;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 100;
+    font-size: 15px;
     line-height: 140%;
     .Dark{
     color: ${({ theme }) => theme.COLORS.WHITE_100};

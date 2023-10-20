@@ -74,6 +74,11 @@ export const Container = styled.header`
     align-items: center;
     gap: 32px;
     padding: 12px 14px;
+    @media (max-width: 820px) { // Ipad Air
+      flex-direction: column;
+      width: 30%;
+      gap: 10px;
+    }
   }
 
   .logo {

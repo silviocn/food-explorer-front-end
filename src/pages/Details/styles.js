@@ -216,8 +216,8 @@ export const Main = styled.main`
   }
   .image {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     margin-left: 50px;
   }
   svg {

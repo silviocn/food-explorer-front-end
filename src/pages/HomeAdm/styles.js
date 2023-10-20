@@ -381,7 +381,7 @@ export const Header = styled.header`
   }
   .gap {
     display: flex;
-    width: 100%;
+    width: 740px;
     align-items: center;
     gap: 32px;
     padding: 12px 14px;

@@ -33,11 +33,11 @@ export const ButtonText = styled(Link)`
 
 export const Main = styled.main`
   grid-area: content;
-  padding: 0 125px;
+  padding: 0 115px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   animation: scale 1s;
 @keyframes scale {
       0% {

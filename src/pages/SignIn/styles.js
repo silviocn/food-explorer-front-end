@@ -67,8 +67,8 @@ export const Container = styled.div`
     }
   }
   .divDark{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 90px;
+    margin-bottom: 112px;
     margin-right: 108px;
     border-radius: 16px;
     width: 476px;

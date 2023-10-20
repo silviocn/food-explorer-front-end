@@ -218,6 +218,7 @@ export const Main = styled.main`
     border-radius: 50%;
     width: 300px;
     height: 300px;
+    margin-left: 50px;
   }
   svg {
     color: ${({ theme }) => theme.COLORS.WHITE_200};

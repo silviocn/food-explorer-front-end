@@ -33,7 +33,7 @@ export const ButtonText = styled(Link)`
 
 export const Main = styled.main`
   grid-area: content;
-  padding: 0 115px;
+  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;

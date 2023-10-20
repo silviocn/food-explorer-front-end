@@ -15,6 +15,10 @@ export const ContainerOne = styled.div`
     
   }
 `
+export const Header = styled.div`
+  width: 100%;
+  padding: 2px 10px;
+`;
 
 export const ContainerTwo = styled.div`
   width: 100%;
@@ -93,6 +97,7 @@ export const Main = styled.main`
   animation: scale 1s;
   overflow-y: scroll;
   height: 100%;
+  margin-left: 20px;
   @media (max-width: 820px) {
   padding: 0px;
   width: 600px;
@@ -103,7 +108,7 @@ export const Main = styled.main`
   gap: 30px;
   @media (max-width: 820px) {
   flex-direction: column;
-  margin-left: 150px;
+  margin-left: 100px;
  }
  }
 @keyframes scale {

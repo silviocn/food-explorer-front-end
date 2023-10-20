@@ -68,7 +68,7 @@ export const Container = styled.div`
     border-radius: 16px;
     width: 476px;
     height: 580px;
-    padding: 64px;
+    padding: 64px 54px;
     background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
   }
   .divLight{
@@ -78,7 +78,7 @@ export const Container = styled.div`
     border-radius: 16px;
     width: 476px;
     height: 580px;
-    padding: 64px;
+    padding: 64px 54px;
     background: ${({ theme }) => theme.COLORS.WHITE_200};
   }
     .h1Dark{

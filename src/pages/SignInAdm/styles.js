@@ -36,14 +36,14 @@ export const Container = styled.div`
     .h3Dark{
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 50px;
     color: ${({ theme }) => theme.COLORS.WHITE_200};
   }
   .h3Light{
     font-family: 'Roboto';
     font-weight: 700;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 50px;
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }

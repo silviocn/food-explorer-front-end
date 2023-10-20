@@ -35,9 +35,10 @@ export const Main = styled.main`
   grid-area: content;
   padding: 0 125px;
   display: flex;
+  flex-direction: column;
+  gap: 30px;
   align-items: center;
   justify-content: center;
-  gap: 50px;
   animation: scale 1s;
 @keyframes scale {
       0% {

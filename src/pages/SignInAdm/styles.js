@@ -62,18 +62,22 @@ export const Container = styled.div`
     }
   }
   .divDark{
+    margin-top: 120px;
+    margin-bottom: 120px;
     margin-right: 108px;
     border-radius: 16px;
     width: 476px;
-    height: 600px;
+    height: 580px;
     padding: 64px;
     background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
   }
   .divLight{
+    margin-top: 120px;
+    margin-bottom: 120px;
     margin-right: 108px;
     border-radius: 16px;
     width: 476px;
-    height: 600px;
+    height: 580px;
     padding: 64px;
     background: ${({ theme }) => theme.COLORS.WHITE_200};
   }

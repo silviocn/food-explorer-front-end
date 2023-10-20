@@ -24,7 +24,7 @@ export const Container = styled.div`
     position: fixed;
     right: 30px;
     top: 30px;
-    scale: 1;
+    scale: 2;
   }
   .statePage:hover {
     scale: 2.8;
@@ -40,6 +40,7 @@ export const Container = styled.div`
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
+    width: 280px;
     color: ${({ theme }) => theme.COLORS.WHITE_200};
   }
 
@@ -48,6 +49,7 @@ export const Container = styled.div`
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
+    width: 280px;
     color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
   }
     @media (max-width: 820px) {
@@ -65,6 +67,8 @@ export const Container = styled.div`
     }
   }
   .divDark{
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-right: 108px;
     border-radius: 16px;
     width: 476px;
@@ -73,6 +77,8 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
   }
   .divLight{
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-right: 108px;
     border-radius: 16px;
     width: 476px;

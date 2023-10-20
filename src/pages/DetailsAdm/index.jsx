@@ -72,31 +72,36 @@ export function DetailsAdm() {
       </Header>
 
       <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
-      <Main>
-        <div >
-          <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="dish image" />
-        </div>
-        <div className="textDetails">
-          <h1>{data.name}</h1>
-          <p>{data.description}</p>
-          
-          <div className="ingredients">
-            {
-              ingredients.map(ingredient => (
-                <span key={String(ingredient.id)}>
-                  {ingredient.name}
-                </span>
-              ))
-            }
+      <Main className={statePage ? "light" : "dark"}>
+          <div className="back">
+            <ButtonText to="/"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>
           </div>
-          
-          <div className="finishBuy">
-          <Link to="/editdish">
-            <ButtonTwo>Edit dish</ButtonTwo>
-          </Link>
+          <div className="details">
+            <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="dish image" />
+            
+            <div className="textDetails">
+              <h1 className={statePage ? "h1Light" : "h1Dark"}>{data.name}</h1>
+              <p className={statePage ? "pLight" : "pDark"}>{data.description}</p>
+             
+              <div className="ingredients">
+                {
+                  ingredients.map(ingredient => (
+                    <span key={String(ingredient.id)}>
+                      <p className={statePage ? "Light" : "Dark"}>{ingredient.name}</p>
+                    </span>
+                  ))
+                }
+              </div>
+
+              <div className="finishBuy">
+                <Link to="/editdish">
+                  <ButtonTwo>Edit dish</ButtonTwo>
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-      </Main>
+        </Main>
+        
       <FooterTwo />
     </Container>
   )

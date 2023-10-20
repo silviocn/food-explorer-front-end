@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 `;
 
-/*export const ButtonText = styled(Link)`
+export const ButtonText = styled(Link)`
   margin-left: 125px;
   margin-top: 50px;
   width: 100px;
@@ -29,16 +29,29 @@ export const Container = styled.div`
     height: 22px;
     color: ${({ theme }) => theme.COLORS.WHITE_200};
   }
-`;*/
+`;
 
 export const Main = styled.main`
   grid-area: content;
-  padding: 0px;
+  padding: 0 125px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+  flex-direction: column;
+  gap: 30px;
   animation: scale 1s;
+  overflow-y: scroll;
+  height: 100%;
+  @media (max-width: 820px) {
+  padding: 0px;
+  width: 600px;
+  gap: 10px;
+ }
+ .details {
+  display: flex;
+  gap: 30px;
+  @media (max-width: 820px) {
+  flex-direction: column;
+ }
+ }
 @keyframes scale {
       0% {
         opacity: 0;
@@ -49,28 +62,48 @@ export const Main = styled.main`
         transform: scale(1.0)
       }
     }
-  
   .textDetails {
+    @media (max-width: 820px) {
+  margin-bottom: 50px;
+ }
     width: 550px;
-    h1 {
-      color: ${({ theme }) => theme.COLORS.WHITE_100};
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 40px;
-      line-height: 140%;
-      margin-bottom: 8px;
-    }
-    p {
-      font-family: 'Poppins';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 24px;
-      line-height: 140%;
-      margin-bottom: 24px;
-      color: ${({ theme }) => theme.COLORS.WHITE_100};
-    }
+  .h1Dark {
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 140%;
+    margin-bottom: 8px;
   }
+  .h1Light {
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+  .pDark {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 32px;
+    color: ${({ theme }) => theme.COLORS.WHITE_100};
+  }
+  .pLight {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 32px;
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_1100};
+  }
+}
   .ingredients {
     display: flex;
     align-items: end;
@@ -80,7 +113,12 @@ export const Main = styled.main`
     font-weight: 100;
     font-size: 15px;
     line-height: 140%;
+    .Dark{
     color: ${({ theme }) => theme.COLORS.WHITE_100};
+  }
+    .Light{
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_1100};
+  }
     margin-bottom: 45px;
     span {
       display: flex;
@@ -96,13 +134,21 @@ export const Main = styled.main`
     gap: 50px;
     padding-right: 160px;
   }
-  .price {
+  .priceDark {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 160%;
     color: ${({ theme }) => theme.COLORS.BLUE_200};
+  }
+  .priceLight {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 160%;
+    color: ${({ theme }) => theme.COLORS.WHITE_200};
   }
   .amount{
     display: flex;
@@ -115,65 +161,20 @@ export const Main = styled.main`
     line-height: 160%;
     color: ${({ theme }) => theme.COLORS.WHITE_100};
   }
-  img {
-    border-radius: 50%;
-  }
   .image {
+    border-radius: 50%;
     width: 300px;
     height: 300px;
+    margin-left: 50px;
   }
   svg {
     color: ${({ theme }) => theme.COLORS.WHITE_200};
     width: 18px;
     height: 18px;
   }
-  .button {
-        background: none;
-        border: none;
-        display: flex;
-        align-items: center;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 160%;
-        color: ${({ theme }) => theme.COLORS.WHITE_100};
-        gap: 10px;
-        transition: transform 0.5s;
-        svg {
-          width: 30px;
-          height: 30px;
-          color: ${({ theme }) => theme.COLORS.GRAY_400};
-        }
-      
-      }
-      .button:hover {
-          transform: scale(1.2)
-      }
-
-      @media (max-width: 820px) { // Ipad Air
-        padding: 0 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-
-        .ingredients {
-          gap: 10px;
-          font-size: 12px;
-          line-height: 120%;
-          margin-bottom: 35px;
-          span {
-            gap: 5px;
-          }
-        }
-        p {
-          font-size: 24px;
-          line-height: 240%;
-          margin-bottom: 32px;
-          width: 70%;
-        }
-      }
+  .none {
+    display: none;
+  }
 `;
 
 export const Header = styled.header`

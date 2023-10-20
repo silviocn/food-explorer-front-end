@@ -395,7 +395,7 @@ export const Header = styled.header`
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-right: 37px;
+    //padding-right: 37px;
     width: 100%;
     svg {
       color: ${({ theme }) => theme.COLORS.BLUE_100};

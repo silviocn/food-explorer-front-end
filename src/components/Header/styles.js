@@ -131,7 +131,7 @@ export const Container = styled.header`
     gap: 10px;
     width: 216px;
     height: 58px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   @keyframes topdown {

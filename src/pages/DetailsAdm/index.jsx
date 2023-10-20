@@ -1,12 +1,9 @@
 import { ContainerOne, ContainerTwo, Main, ButtonText, Logout, Header, Input } from './styles'
-// import { HeaderTwo } from '../../components/HeaderTwo'
 import { Footer } from '../../components/Footer'
 import { SlArrowLeft } from 'react-icons/sl'
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
-import { Navigate, useParams } from 'react-router-dom'
-import { Img } from '../../components/Img'
-// import { GoTrashcan } from 'react-icons/go'
+import { useParams } from 'react-router-dom'
 import { FiLogOut } from 'react-icons/fi'
 import { BsFillHexagonFill } from 'react-icons/bs'
 import { BiSearchAlt } from 'react-icons/bi'
@@ -30,16 +27,16 @@ export function DetailsAdm() {
     fetchFood()
   }, [])
 
-  async function handleDeleteDish(id) {
+  /*async function handleDeleteDish(id) {
     if (confirm("Are you sure you want to delete this dish?")) {
       await api.delete(`/dishes/${id}`)
       navigate(-1)
     }
-  }
+  } 
 
   async function handleEditDish(id) {
     navigate(`/dishes/${id}`)
-  }
+  } */
 
   function handleSignOut() {
     navigate("/adm")

@@ -15,7 +15,6 @@ export function Details() {
   const params = useParams()
   const { statePage } = useStatePage()
 
-  //console.log(ingredients)
   useEffect(() => {
     async function fetchFood() {
       const response = await api.get(`/dishes/${params.id}`)

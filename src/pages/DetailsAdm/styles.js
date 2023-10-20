@@ -119,8 +119,8 @@ export const Main = styled.main`
     border-radius: 50%;
   }
   .image {
-    width: 310px;
-    height: 310px;
+    width: 300px;
+    height: 300px;
   }
   svg {
     color: ${({ theme }) => theme.COLORS.WHITE_200};

@@ -435,10 +435,11 @@ export const Header = styled.header`
       }
     }
   }
-  /*.buttons {
-    display: flex;
-    gap: 20px;
-  }*/
+  .buttons {
+    @media (max-width: 820px){
+      display: none;
+    }
+  }
 `;
 
 export const Logout = styled.button`

@@ -19,7 +19,7 @@ export const Container = styled.header`
   @media (max-width: 820px) {
   padding: 0px;
   height: 150px;
-  width: 600px;
+  width: 100%;
   display: flex;
   gap: 10px;
   align-items: center;

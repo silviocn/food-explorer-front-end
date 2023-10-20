@@ -62,7 +62,7 @@ export const Container = styled.div`
     }
   }
   .logoHomeDark {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       width: 600px;
       margin: 100px 0 0 0;
       height: 150px;
@@ -76,8 +76,8 @@ export const Container = styled.div`
     animation: topdown 1s;
     img {
       @media (max-width: 820px) {
-      width: 180px;
-      height: 135px;
+      width: 200px;
+      height: 150px;
       margin-top: 0px;
   }
       margin-top: -50px;
@@ -99,8 +99,8 @@ export const Container = styled.div`
     animation: topdown 1s;
     img {
       @media (max-width: 820px) {
-      width: 180px;
-      height: 135px;
+      width: 200px;
+      height: 150px;
       margin-top: 0px;
     }
       margin-top: -50px;
@@ -153,7 +153,7 @@ export const Container = styled.div`
     }
   }
   .logoTextLight{
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
     margin-left: -650px;
   }
     margin-left: -500px;
@@ -164,7 +164,7 @@ export const Container = styled.div`
     justify-content: center;
     white-space: nowrap;
   h1 {
-    @media (max-width: 600px) {
+    @media (max-width: 820px) {
       font-size: 20px;
   }
       margin-left: 600px;
@@ -175,14 +175,14 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
     p {
-      margin-left: 600px;
+      margin-left: 820px;
       font-family: 'Poppins';
       color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
       font-weight: 500;
       font-size: 16px;
       line-height: 140%;
-      @media (max-width: 600px) {
-    font-size: 14px;
+      @media (max-width: 820px) {
+    font-size: 12px;
   }
     }
   }

@@ -78,7 +78,8 @@ export const Container = styled.div`
       @media (max-width: 820px) {
       width: 200px;
       height: 150px;
-      margin-top: 0px;
+      margin-top: -30px;
+      margin-left: -20px;
   }
       margin-top: -50px;
       margin-left: -40px;
@@ -101,7 +102,8 @@ export const Container = styled.div`
       @media (max-width: 820px) {
       width: 200px;
       height: 150px;
-      margin-top: 0px;
+      margin-top: -30px;
+      margin-left: -20px;
     }
       margin-top: -50px;
       margin-left: -40px;

@@ -4,8 +4,6 @@ import { SlArrowLeft } from 'react-icons/sl'
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
 import { useParams } from 'react-router-dom'
-// import { Img } from '../../components/Img'
-// import { GoTrashcan } from 'react-icons/go'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
 import { BsFillHexagonFill } from 'react-icons/bs'
@@ -31,12 +29,12 @@ export function DetailsAdmDrinks() {
     
   }, [])
 
-  async function handleDeleteDrink(id) {
+  /* async function handleDeleteDrink(id) {
     if (confirm("Are you sure you want to delete this drink?")) {
       await api.delete(`/drinks/${id}`)
     navigate(-1)
     }
-  }
+  } */
 
   function handleSignOut() {
     navigate("/adm")

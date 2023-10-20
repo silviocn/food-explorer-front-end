@@ -6,7 +6,6 @@ import { useState, useEffect } from "react"
 import { api } from "../../services/api"
 import { useParams } from 'react-router-dom'
 import { AmountAndButtonInclude } from '../../components/AmountAndButtonInclude'
-import { Img } from '../../components/Img'
 import { useStatePage } from '../../hooks/statePage'
 
 export function DetailsDrinks() {

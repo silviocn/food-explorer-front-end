@@ -3,9 +3,7 @@ import { Footer } from '../../components/Footer'
 import { SlArrowLeft } from 'react-icons/sl'
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
-import { Navigate, useParams } from 'react-router-dom'
-// import { Img } from '../../components/Img'
-// import { GoTrashcan } from 'react-icons/go'
+import { useParams } from 'react-router-dom'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
 import { BsFillHexagonFill } from 'react-icons/bs'
@@ -31,12 +29,12 @@ export function DetailsAdmDesserts() {
 
   }, [])
 
-  async function handleDeleteDessert(id) {
+  /* async function handleDeleteDessert(id) {
     if (confirm("Are you sure you want to delete this dessert?")) {
       await api.delete(`/desserts/${id}`)
     navigate(-1)
     }
-  }
+  } */
   
   function handleSignOut() {
     navigate("/adm")

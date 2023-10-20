@@ -396,7 +396,7 @@ export const Header = styled.header`
     align-items: center;
     gap: 10px;
     //padding-right: 37px;
-    width: 100%;
+    //width: 100%;
     svg {
       color: ${({ theme }) => theme.COLORS.BLUE_100};
       width: 29.2px;

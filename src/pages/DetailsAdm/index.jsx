@@ -12,12 +12,14 @@ import { BsFillHexagonFill } from 'react-icons/bs'
 import { BiSearchAlt } from 'react-icons/bi'
 import { useNavigate, Link } from 'react-router-dom'
 import { ButtonTwo } from '../../components/ButtonTwo'
+import { useStatePage } from '../../hooks/statePage'
 
 export function DetailsAdm() {
   const [data, setData] = useState({})
   const [ingredients, setIngredients] = useState([])
   const params = useParams()
   const navigate = useNavigate()
+  const { statePage } = useStatePage()
 
   useEffect(() => {
     async function fetchFood() {
@@ -101,7 +103,7 @@ export function DetailsAdm() {
             </div>
           </div>
         </Main>
-        
+
       <FooterTwo />
     </Container>
   )

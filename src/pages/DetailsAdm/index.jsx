@@ -1,6 +1,6 @@
 import { Container, Main, ButtonText, Logout, Header, Input } from './styles'
 // import { HeaderTwo } from '../../components/HeaderTwo'
-import { FooterTwo } from '../../components/FooterTwo'
+import { Footer } from '../../components/Footer'
 import { SlArrowLeft } from 'react-icons/sl'
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
@@ -72,7 +72,7 @@ export function DetailsAdm() {
           </Logout>
         </div>
       </Header>
-      
+
       <Main className={statePage ? "light" : "dark"}>
           <div className="back">
             <ButtonText to="/"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>
@@ -103,7 +103,7 @@ export function DetailsAdm() {
           </div>
         </Main>
 
-      <FooterTwo />
+      <Footer />
     </Container>
   )
 }

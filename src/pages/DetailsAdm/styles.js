@@ -1,13 +1,56 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-export const Container = styled.div`
+export const ContainerOne = styled.div`
+    div.containerLight {
+    width: 100%;
+    height: 100vh;
+    background: ${({ theme }) => theme.COLORS.GRAY_100};
+    
+  }
+    div.containerDark {
+    width: 100%;
+    height: 100vh;
+    background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    
+  }
+`
+
+export const ContainerTwo = styled.div`
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: 104px 50px auto 77px;
-  grid-template-areas: "header" "back" "content" "footer";
-
+  overflow: hidden;
+  grid-template-rows: 104px auto 77px;
+  @media (max-width: 820px) {
+    grid-template-rows: 150px auto 77px;
+  }
+  grid-template-areas: "header" "content" "footer";
+  main::-webkit-scrollbar {
+  width: 20px;
+  }
+  main::-webkit-scrollbar-thumb {
+  background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
+  border-radius: 20px;
+  width: 1px;
+  background-clip: padding-box; /*para as bordas ficarem transparentes e com isso dar a impressão que tem uma margem nos lados da borda*/
+  border: 5px solid rgba(0, 0, 0, 0);
+  }
+  main::-webkit-scrollbar-thumb:hover {
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
+  border-radius: 20px;
+  width: 1px;
+  background-clip: padding-box; /*para as bordas ficarem transparentes e com isso dar a impressão que tem uma margem nos lados da borda*/
+  border: 5px solid rgba(0, 0, 0, 0);
+  }
+  main.light {
+    background: ${({ theme }) => theme.COLORS.GRAY_100};
+    
+  }
+  main.dark {
+    background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    
+  }
 `;
 
 export const ButtonText = styled(Link)`

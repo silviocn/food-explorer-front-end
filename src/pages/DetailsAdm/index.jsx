@@ -1,4 +1,4 @@
-import { Container, Main, ButtonText, Logout, Header, Input } from './styles'
+import { ContainerOne, ContainerTwo, Main, ButtonText, Logout, Header, Input } from './styles'
 // import { HeaderTwo } from '../../components/HeaderTwo'
 import { Footer } from '../../components/Footer'
 import { SlArrowLeft } from 'react-icons/sl'
@@ -47,7 +47,8 @@ export function DetailsAdm() {
   }
 
   return (
-    <Container>
+    <ContainerOne>
+      <ContainerTwo className={statePage ? "containerLight" : "containerDark"}>
       <Header>
         <div className="logo">
           <BsFillHexagonFill />
@@ -104,6 +105,7 @@ export function DetailsAdm() {
         </Main>
 
       <Footer />
-    </Container>
+      </ContainerTwo>
+    </ContainerOne>
   )
 }

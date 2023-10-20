@@ -15,18 +15,12 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-between;
   animation: downtop 1s;
-  @media (max-width: 900px) {
-    width: 100%;
-    padding: 0px;
-  }
-  @media (max-width: 750px) {
-      width: 100%px;
-      padding: 5px;
-  }
   @media (max-width: 820px) {
-      width: 600px;
-      font-size: 50%;
+    width: 100%;
+    padding: 0 10px;
+    font-size: 50%
   }
+  
   }
   .light {
   position: absolute;

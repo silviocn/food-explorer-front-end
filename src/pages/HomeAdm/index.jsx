@@ -1,19 +1,16 @@
 import { useNavigate } from 'react-router-dom'
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { api } from "../../services/api"
 import { FooterTwo } from '../../components/FooterTwo'
 import HomeImage from '../../assets/homeimage.png'
-import { BiChevronRight } from 'react-icons/bi'
-import { IoIosArrowBack } from 'react-icons/io'
-import { IoIosArrowForward } from 'react-icons/io'
-import { useRef } from 'react'
+import { BiChevronRight, BiSearchAlt } from 'react-icons/bi'
+import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import { BsFillHexagonFill } from 'react-icons/bs'
 import { FiLogOut } from 'react-icons/fi'
-import { Container, Logout, Header, Input, Links } from './styles'
-import { BiSearchAlt } from 'react-icons/bi'
+import { Container, Logout, Header, Input } from './styles'
 import { Link } from 'react-router-dom'
 import { useAuthAdm } from '../../hooks/authAdm'
-import { TfiPencil, TfiReceipt } from 'react-icons/tfi'
+import { TfiPencil } from 'react-icons/tfi'
 import { useStatePage } from '../../hooks/statePage'
 import { ButtonTwo } from '../../components/ButtonTwo'
 
@@ -78,6 +75,7 @@ export function HomeAdm() {
 
   const navigate = useNavigate()
 
+/*
   async function handleEditDish(id) {
     if (confirm("Are you sure you want to edit?"))
     await api.update(`/dishes/${id}`)
@@ -92,6 +90,7 @@ export function HomeAdm() {
     if (confirm("Are you sure you want to edit?"))
     await api.update(`/drinks/${id}`)
   }
+*/
 
   const carousel = useRef(null)
   const carouselTwo = useRef(null)
@@ -110,7 +109,6 @@ export function HomeAdm() {
 
   const handleLeftClickTwo = (e) => {
     e.preventDefault()
-    //console.log(carousel.current)
     carouselTwo.current.scrollLeft -= carouselTwo.current.offsetWidth
   }
 
@@ -121,7 +119,6 @@ export function HomeAdm() {
 
   const handleLeftClickThree = (e) => {
     e.preventDefault()
-    //console.log(carousel.current)
     carouselThree.current.scrollLeft -= carouselThree.current.offsetWidth
   }
 

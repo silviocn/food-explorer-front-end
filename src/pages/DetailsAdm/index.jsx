@@ -72,8 +72,7 @@ export function DetailsAdm() {
           </Logout>
         </div>
       </Header>
-
-      <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
+      
       <Main className={statePage ? "light" : "dark"}>
           <div className="back">
             <ButtonText to="/"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>

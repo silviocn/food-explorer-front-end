@@ -87,12 +87,14 @@ export const Main = styled.main`
   padding: 0px;
   width: 600px;
   gap: 20px;
+  margin-left: 100px;
  }
  .details {
   display: flex;
   gap: 30px;
   @media (max-width: 820px) {
   flex-direction: column;
+  margin-left: 20px;
  }
  }
 @keyframes scale {

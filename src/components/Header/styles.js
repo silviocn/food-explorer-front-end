@@ -78,6 +78,7 @@ export const Container = styled.header`
       flex-direction: column;
       width: 30%;
       gap: 10px;
+      margin-left: 40px;
     }
   }
 

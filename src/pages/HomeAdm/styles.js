@@ -24,14 +24,14 @@ export const Container = styled.div`
   background: ${({ theme }) => theme.COLORS.BACKGROUND_100};
   border-radius: 20px;
   width: 1px;
-  background-clip: padding-box; /*para as bordas ficarem transparentes e com isso dar a impressão que tem uma margem nos lados da borda*/
+  background-clip: padding-box; 
   border: 5px solid rgba(0, 0, 0, 0);
   }
   main::-webkit-scrollbar-thumb:hover {
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
   border-radius: 20px;
   width: 1px;
-  background-clip: padding-box; /*para as bordas ficarem transparentes e com isso dar a impressão que tem uma margem nos lados da borda*/
+  background-clip: padding-box;
   border: 5px solid rgba(0, 0, 0, 0);
   }
   main {
@@ -365,6 +365,7 @@ export const Header = styled.header`
     gap: 5px;
     align-items: start;
     justify-content: center;
+    z-index: -1;
    }
   @keyframes topdown {
       0% {

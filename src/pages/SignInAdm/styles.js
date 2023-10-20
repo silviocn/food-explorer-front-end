@@ -24,7 +24,7 @@ export const Container = styled.div`
     position: fixed;
     right: 30px;
     top: 30px;
-    scale: 2.5;
+    scale: 2;
   }
   .statePage:hover {
     scale: 2.8;

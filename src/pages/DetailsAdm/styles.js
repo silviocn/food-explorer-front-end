@@ -51,7 +51,7 @@ export const Main = styled.main`
     }
   
   .textDetails {
-    width: 750px;
+    width: 550px;
     h1 {
       color: ${({ theme }) => theme.COLORS.WHITE_100};
       font-family: 'Poppins';

@@ -1,5 +1,5 @@
-import { Container, Main, ButtonText, Logout, Header, Input } from './styles'
-import { FooterTwo } from '../../components/FooterTwo'
+import { ContainerOne, ContainerTwo, Main, ButtonText, Logout, Header, Input } from './styles'
+import { Footer } from '../../components/Footer'
 import { SlArrowLeft } from 'react-icons/sl'
 import { useState, useEffect } from "react"
 import { api } from "../../services/api"
@@ -11,12 +11,14 @@ import { ButtonTwo } from '../../components/ButtonTwo'
 import { BsFillHexagonFill } from 'react-icons/bs'
 import { BiSearchAlt } from 'react-icons/bi'
 import { FiLogOut } from 'react-icons/fi'
+import { useStatePage } from '../../hooks/statePage'
 
 export function DetailsAdmDrinks() {
   const [data, setData] = useState({})
   const [ingredients, setIngredients] = useState([])
   const params = useParams()
   const navigate = useNavigate()
+  const { statePage } = useStatePage()
 
   useEffect(() => {
     async function fetchFood() {
@@ -42,7 +44,8 @@ export function DetailsAdmDrinks() {
   }
 
   return (
-    <Container>
+    <ContainerOne>
+      <ContainerTwo className={statePage ? "containerLight" : "containerDark"}>
       <Header>
         <div className="logo">
           <BsFillHexagonFill />
@@ -68,33 +71,38 @@ export function DetailsAdmDrinks() {
         </div>
       </Header>
 
-      <ButtonText to="/adm"><SlArrowLeft />Back</ButtonText>
-      <Main>
-        <div >
-          <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="dish or drink image" />
-        </div>
-        
-        <div className="textDetails">
-          <h1>{data.name}</h1>
-          <p>{data.description}</p>
-          <div className="ingredients">
-            {
-              ingredients.map(ingredient => (
-                <span key={String(ingredient.id)}>
-                  {ingredient.name}
-                </span>
-              ))
-            }
+      <Main className={statePage ? "light" : "dark"}>
+          <div className="back">
+            <ButtonText to="/adm"><SlArrowLeft className={statePage ? "svgLight" : "svgDark"} /><p className={statePage ? "light" : "dark"}>Back</p></ButtonText>
           </div>
-          
-          <div className="finishBuy">
-            <Link to="/editdish">
-              <ButtonTwo>Edit dish</ButtonTwo>
-            </Link>
+          <div className="details">
+            <img className="image" src={`${api.defaults.baseURL}/files/${data.image}`} alt="dish image" />
+            
+            <div className="textDetails">
+              <h1 className={statePage ? "h1Light" : "h1Dark"}>{data.name}</h1>
+              <p className={statePage ? "pLight" : "pDark"}>{data.description}</p>
+             
+              <div className="ingredients">
+                {
+                  ingredients.map(ingredient => (
+                    <span key={String(ingredient.id)}>
+                      <p className={statePage ? "Light" : "Dark"}>{ingredient.name}</p>
+                    </span>
+                  ))
+                }
+              </div>
+
+              <div className="finishBuy">
+                <Link to="/editdish">
+                  <ButtonTwo>Edit dish</ButtonTwo>
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-      </Main>
-      <FooterTwo />
-    </Container>
+        </Main>
+
+      <Footer />
+      </ContainerTwo>
+    </ContainerOne>
   )
 }

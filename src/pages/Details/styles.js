@@ -103,6 +103,7 @@ export const Main = styled.main`
   gap: 30px;
   @media (max-width: 820px) {
   flex-direction: column;
+  margin-left: 150px;
  }
  }
 @keyframes scale {

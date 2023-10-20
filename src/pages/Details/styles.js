@@ -96,7 +96,7 @@ export const Main = styled.main`
   @media (max-width: 820px) {
   padding: 0px;
   width: 600px;
-  gap: 10px;
+  gap: 20px;
  }
  .details {
   display: flex;
